@@ -3,37 +3,52 @@
 ## Game Artificial Intelligence
 
 FGCT7011
+## Overview
+This is a collaborative team project for the FGCT7011 Game Artificial Intelligence module. Our game is called “Project Ebonkeep”. This game is a boss fight 3D game with a medieval theme powered by game AI and was created using Unreal Engine 5.
+The main objective of the game is for the player to go to a castle and defeat the AI-controlled guards, sword and bow guards there. After defeating them, the player has to search a special potion and increases his health, unlocks the fire arrow power, and faces the final large golem boss enemy.
+The golem boss, sword guards and bow guards all of these are created using behavior trees and blueprints. Additionally, the game also has NPC characters called villagers. We do not use behavior trees for them, but only regular blueprints.
+Our team consists of six people: three artists, two programmers and a designer. Everyone was new to Unreal Engine. So it was important to learn from each other on the project. When one didn’t know, the other helped. By being able to work well in a team environment.
+My contribution to this project was to create smart AI Guards using behaviour trees. This included both sword guards and bow guards. Another contribution was to create the villagers NPC characters. Although the villager AI didn’t use behavior trees and i used blueprint and AI perception for them.
+The behavior tree for the boss enemy was created by another programmer. However, I closely studied his work and helped him debug bugs when needed.
+I became interested in behavior trees, AI perception systems (how the AI ​​reacts to its environment), and AI decision-making in Unreal Engine 5 through research based on YouTube tutorials, Unreal Engine documentation, and indie game developers.
 
-## Key Requirements
-
-### Executable (LO3)
-Provide a build of your project (e.g., .exe) that can be run on a local machine or an agree upon platform. The build should be made available via [**itch.io**](https://itch.io/). Ensure the build includes all necessary files and instructions for execution.
-
-### Use Of AI (LO3)
-Utilise AI technology or a video game AI model within the context of your project. This can take the form of AI generated content, such as dialogue, visuals, audio or the form of AI integrated technology within your project. This also can take the form of using an AI model within the context of your project, such as behaviour trees, unstructured ai, a state machine or goal oriented action planning.
-
-# Development Commentary Template
-
-## Project Outline (Suggested Word Count 500) 
-- Provide a concise description of the project, including its core concept and purpose.  
-- Outline the initial goals or objectives you aim to achieve.  
-- Identify any anticipated challenges or potential issues that may arise during development.
-
-## Research (Suggested Word Count 1,100) 
-
+## Research 
 ### Methodology  
-- Identify relevant sources for the project, including articles, documentation, talks, and games.  
-- Detail how these sources have informed your practical work and influenced your approach.
+ For this project, I researched several sources related to game AI. Through these researches, I learnt important principles, techniques, and practical examples of applications. I created the AI ​​system of "Project Ebonkeep" using YouTube tutorials from great game developers such as Gorka Games, Ali Elzoheiry, and Ryan Laley. And also i reearched official Unreal Engine documentation, and information available on Unreal Engine Dev community page.
+
+Through this research, I was able to:
+- Get a deep understanding of Behavior Trees
+- Develop AI Perception Systems
+- Understand the decision-making mechanisms in the game
+- Create different types of AI agents (soldiers, archers, villagers)
+
+My research methodology includes the following steps:
+Collect and study free online resources
+Obtain technical information from the Unreal Engine wiki and official documentation
+After studying the resources, conduct experiments on various AI concepts
+Improvement of AI systems based on the experiments
 
 ### Game Sources  
-- Conduct research on games that are relevant to your project. Provide a brief description of each game and the insights it offers.  
-- Analyse the game's approach, cross-referencing it with other sources such as articles or talks to support your analysis.  
-- Explain how these insights apply to your project and influence your decision-making process.
+1. The Witcher 3: Wild Hunt
+The mechanism used for the AI ​​minor enemies (Guards, Bandits) in The Witcher 3 was used as a guide for the swordsmen and archers in our "Project Ebonkeep". In particular, the way enemies explore, detect suspicious activity, and provide early warning of attacks were used. What makes The Witcher 3's AI system unique is its ability to respond to natural routines and the environment.
+
+I used the following concepts when developing the Guards AI:
+- Patrol Routes
+- Suspicious Activity Detection
+- Switching of instruments (Normal, Investigation, Attack)
+
+2. Assassin's Creed Series
+The NPC interaction system in the Assassin's Creed series was a very special source for the development of the AI ​​in my game. The way the NPC characters in this game communicate with each other and how they interact with the player was a big inspiration for me. For example, the way the guards converse with each other, exchange information with each other, and converse with the player is a feature I would like to include in the AI ​​system of my game. I am currently working on adding this feature to the game "Project Ebonkeep".
+
+The features that I am implementing from the Assassin's Creed series are:
+
+- Dialogue and interaction system between NPC characters
+- Interaction system between NPC characters and the player
+- Social behavior patterns and response system
+- Exchange of information between NPCs about suspicious activity
 
 ### Academic Sources  
-- Research academic papers, books, or articles that provide theoretical guidance for your project. Include a brief summary of each source.  
-- Describe how the academic research applies to your project and shapes your design and development decisions.
-
+--
 ### Documentation Sources  
 - Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
 - Explain how this technical knowledge supports your project work and guides your decision-making process.
