@@ -50,15 +50,77 @@ The features that I am implementing from the Assassin's Creed series are:
 ### Academic Sources  
 --
 ### Documentation Sources  
-- Investigate relevant documentation, tutorials, or instructional videos that provide technical insights into your tasks. Summarise the content and its relevance to your project.  
-- Explain how this technical knowledge supports your project work and guides your decision-making process.
+1. Unreal Engine Documentation - Behavior Trees
+The official Unreal Engine documentation provides a detailed guide to Behavior Trees. Using this documentation, I learned about the use of Blackboards, Decorator and Service nodes, and Task nodes.
+Important concepts I learned from the Unreal Engine documentation:
+
+Using the Blackboard system
+AI Perception Component
+Behavior Tree Decorators
+Behavior Tree Services
+Behavior Tree Tasks
+
+2. Gorka Games YouTube Tutorials
+The "Enemy AI" tutorial series created by Gorka Games was a very important resource that I used. This tutorial series discusses the process of creating a complete AI system in Unreal Engine step by step.
+Important things I learned from the Gorka Games guides:
+
+Creating the AI ​​Perception Component
+Creating Test Nodes in the Behavior Tree
+Using Blackboard Variables
+Implementing Combat Logic and Patrol Logic
+
+3. Ali Elzoheiry's Advanced AI Tutorials
+Ali Elzoheiry's workshops and techniques discuss creating more complex AI behaviors in Unreal Engine. Using these techniques, I created Team AI Behaviors for Soldiers and Archers.
+Important concepts I learned from Ali Elzoheiry's workshops:
+
+Coordinated Attack Strategies
+Ranged Attacker AI - for archers
+Melee Attacker AI - for swordsmen
+
+4. Ryan Laley's AI Combat Systems
+Ryan Laley's set of techniques focuses on combat systems in game AI. Using this set of techniques, I developed the combat actions of the Guards AI.
+Important concepts I learned from Ryan Laley's guides:
+
+Combat Transitions
+Dynamic Attack Patterns
+Response to player actions
+Attack Sensitive Zones
 
 ## Implementation (Suggested Word Count 1,100)  
 
 ### Process
-- Provide a step-by-step breakdown of your development process, including key milestones and decisions made throughout the project.  
-- Highlight any tools, frameworks, or techniques used, and explain how they contributed to the implementation.  
-- Include screenshots, diagrams, or code snippets where relevant to showcase your progress.
+The process of developing collobaration game "Project Ebonkeep" took place in several steps as follows:
+#### Project Initiation and Planning
+ - #### Initial Inspiration and Concept
+When our team first discussed creating a game for the Collabaration project, we decided to take on the challenge of creating a game with outstanding AI, even though we were all new to Unreal Engine . After discussion, we decided to create a boss battle game with a medieval theme and using Unreal Engine 5.4 because in pur university PCs are using this version.
+ - #### Team Members and Task Distribution
+We had six team members, and their tasks were divided as follows:
+  - Three artists (3D modeling, animation, and environment design)
+  - Two programmers (making AI Guards, the boss Enemey and NPC Vilagers)
+  - One designer (level design and game mechanics)
+
+My role was to develop the guard AI (swordsmen and archers) and the villagers' behaviors.
+ - #### Castle Planning
+We first thought about what we wanted the castle to look like. In keeping with the theme of our game, we decided to create a castle that was designed to resemble a large and ancient.
+Accordingly, we initially planned what types of places and people would be in and around the castle.
+ ##### Inside the castle:
+
+- Swordsmith – to give the player the ability to craft weapons.
+
+- Bakery – to represent the daily life of the villagers.
+
+- Shops and Village – as an area where the general public lives.
+
+- Guards and Villagers – as constant agents that act in AI processes.
+
+- Training Area – to train the guards and provide combat training for the player.
+
+- Main Boss Arena – a large area suitable for the final main battle.
+
+Based on all this information, we created these locations in Unreal Engine. We analyzed our designs in detail and tried to create a beautiful and lively castle environment.
+
+The following pictures show our journey from the beginning of building our castle to today.
+
 
 ### New Approaches  
 - Detail any innovative or new approaches you explored during the project.  
