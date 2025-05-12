@@ -1,7 +1,8 @@
 # Collobaration Project 
+##### 2412587
+##### Kuranage Senith Madushan Perera
 
 ## Game Artificial Intelligence
-
 FGCT7011
 ## Overview
 This is a collaborative team project for the FGCT7011 Game Artificial Intelligence module. Our game is called “Project Ebonkeep”. This game is a boss fight 3D game with a medieval theme powered by game AI and was created using Unreal Engine 5.
@@ -47,10 +48,9 @@ The features that I am implementing from the Assassin's Creed series are:
 - Social behavior patterns and response system
 - Exchange of information between NPCs about suspicious activity
 
-### Academic Sources  
---
 ### Documentation Sources  
-1. Unreal Engine Documentation - Behavior Trees
+1. Unreal Engine Documentation - Behavior Trees Behavior Trees in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-trees-in-unreal-engine (Accessed  13/05/2025).
+
 The official Unreal Engine documentation provides a detailed guide to Behavior Trees. Using this documentation, I learned about the use of Blackboards, Decorator and Service nodes, and Task nodes.
 Important concepts I learned from the Unreal Engine documentation:
 
@@ -121,72 +121,114 @@ Based on all this information, we created these locations in Unreal Engine. We a
 
 The following pictures show our journey from the beginning of building our castle to today.
 
+ - #### Character Creation and Design
+ Boss Enemy Design
+Creating the final boss, the massive Gold Golem:
+
+Conceptual Phase - Our artists created concept drawings of a large, fearsome Gold Golem, with lion faces on both shoulders.
+AI Behavior Design - A complex behavior tree for the boss was created by our other programmer, including the following special abilities:
+- Fire Breath - Delivers a powerful fire attack
+- Ground Smash - Delivers a powerful attack that shakes the ground
+- Special Abilities: Increases impulsiveness when injured (Enrage)
+
+Coordination - I helped my colleague build the boss AI, especially with bug fixes and performance improvements.
+
+Guard AI Design
+I designed my main role, the Guard AI, as follows:
+
+Bow Guard Design
+- Designed as a typical medieval archer
+- Attacks from a distance using a crossbow
+- Positioned on high walls and towers
+
+Sword Guard Design
+- Designed as a medieval knight character with a war shield and sword
+- Attacks in close combat using a protective shield and a strong sword
+- Deployed to guard gates and sensitive areas
+
+Player Character
+- Designed as a hero character with a large shield and crossbow
+- A hero wearing a heavy armor with a balance of strength and protection
+- Fire arrows special ability available (after finding a special nutrient liquid)
+
+
 
 ### New Approaches  
-- Detail any innovative or new approaches you explored during the project.  
-- Explain why these approaches were chosen and how they differ from standard practices.  
-- Evaluate the success of these approaches, including any challenges faced and lessons learned.
+### Sword Guards and Bow Guards AI Behaviors:
+When player is seen: Activate Combat State, move towards player.
+When sound is heard: Activate Investigating State, move towards sound.This AI Perception system allows Guards to respond naturally to the player, for example:
 
+   - Run towards to Player and Attack as soon as they see it
+   - When sound is heard, investigate the direction of sound
+   - If there is no doubt after investigation, return to Passive State
+
+Behavior Tree Development and Preview
+
+ - #### Main Behavior Tree Structure:
+  
+  I set up a Selector Node to select the three main AI states:
+  -  Combat State
+  - Investigating State
+  - Passive State
+
+#### Combat State:
+
+In the Sequence Node:
+
+ - BTT_SetMovementSpeed: Set Sprint Speed
+ - BTT_FocusPlayer: Focus on the player
+ - Move to Player: "MoveToPlayer" for Swordsmen
+ - BTT_Attack: Activate Attack
+ - Wait (2 seconds): Time between attacks
+
+#### Investigating State:
+
+In Sequence Node:
+
+- BTT_SetMovementSpeed: Set Walking Speed
+- BTT_ClearFocus: Clear Focus
+- Move to Suspicious Location
+- Wait (5 seconds): Inspect Area
+- BTT_SetStateAsPassive: Set AI's State to Passive
+
+#### Passive State:
+
+In Sequence Node:
+
+- BTT_SetMovementSpeed: Set Normal Walking Speed
+- BTT_MovePatrolRoute: Move along Patrol Route
+- Wait (Random 2-5 seconds): Pause
+
+### Villager NPC System
+Apart from Guard AI, I also created Villager NPC characters, they have behavior trees instead of Using Common Blueprints:
+
+Villager Blueprint Setup:
+
+Created a Character Blueprint
+Change locations periodically during Event Tick
+Respond to AI Perception
+
+Villager Behavior:
+
+Daily Activities: Villagers move between shops, gardens, and other areas during the day
+When seeing the player: Stop, turn towards the player, wave, or talk
+When seeing a battle: Run away in fear, hide
+
+Player Interaction:
+
+Display a simple dialogue system when the player talks to the villagers
+Able to obtain information or missions from some villagers
 ### Testing
-- Document the user testing conducted, specifying the type of tests used (e.g., automated testing, guided user testing, blind testing).  
-- Present feedback or issues identified during testing, using graphs, tables, or visual aids to summarise results.  
-- Describe how these issues were addressed. If any issues were not resolved, provide a clear justification for leaving them unaddressed.
+
 
 ### Technical Difficulties
-- Identify any technical difficulties encountered during the implementation phase.  
-- Provide details on how these issues were diagnosed and resolved.  
-- If any difficulties remain unresolved, explain the impact on the project and any mitigation strategies used to minimise their effect.  
-- Reflect on what you would do differently in future projects to avoid similar issues.
 
-## Outcomes (Suggested Word Count 300) 
 
-### Source Code/Project Files
-- Provide a link to your complete source code or project files.  
-- Ensure the link is publicly accessible or shared with the appropriate permissions.  
-- Include a brief description of the files provided, highlighting key components or any instructions required to run the project.
-
-### Build Link
-- Share a link to a playable or executable build of your project.  
-- Ensure the build is accessible across relevant platforms and is publicly accessible.  
-- Include any necessary instructions for running the build, such as system requirements or installation steps.
-
-### Video Demonstration
-- Embed a video or provide a link to a recorded demonstration of your project in action.  
-- The video should showcase key features, functionality, and any unique elements of your project.  
-- Include a brief commentary or text overlay in the video to explain the different aspects of your project as they are shown.
-
-## Reflection (Suggested Word Count 500) 
-
-### Research Effectiveness  
-- Assess the usefulness of the research conducted during the project.  
-- Highlight which sources (games, academic, documentation) had the most significant impact on your work and explain why.  
-- Identify any research gaps or areas where additional information could have improved your project outcomes.
-
-### Positive Analysis 
-- Reflect on the successful aspects of the project.  
-- Highlight specific elements that worked well, such as technical solutions, creative decisions, or user feedback.  
-- Provide evidence to support your analysis, such as test results, screenshots, or user comments.
-
-### Negative Analysis  
-- Identify the areas of the project that did not go as planned or could have been improved.  
-- Discuss challenges you faced, whether technical, creative, or time-related, and evaluate their impact on the final product.  
-- Reflect on any mistakes or missteps and what you learned from them.
-
-### Next Time
-- Outline what you would do differently if you were to undertake a similar project again.  
-- Suggest improvements to your workflow, research methods, or implementation process based on your reflections.  
-- Consider any new tools, techniques, or approaches you would explore in future projects to achieve better results.
 
 ## Bibliography  
-- Compile a complete list of all sources referenced throughout your project. This may include articles, journals, videos, games, software, documentation, or any other materials.  
-- Ensure all references are formatted according to the [university's citation method](https://mylibrary.uca.ac.uk/referencing).  
-- Organise your references in alphabetical order. Alternatively, you may separate them by type (e.g., academic sources, games, videos), but consistency is key.
 
 ## Declared Assets
-- Provide a detailed list of any third-party assets used in the project.  
-- This includes asset packs, music, sound effects, 3D models, textures, scripts, or code from external sources.  
-- Declare any use of AI tools (e.g., ChatGPT, GitHub Copilot, Meshy) or pre-existing code. Specify the purpose of these assets/tools and how they were integrated into your work.  
-- Ensure you clearly distinguish between your original work and any external contributions to maintain academic integrity.
+
 
 <br>
 <br>
