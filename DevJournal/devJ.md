@@ -60,33 +60,27 @@ Behavior Tree Decorators
 Behavior Tree Services
 Behavior Tree Tasks
 
-2. Gorka Games YouTube Tutorials
+2. Ali Elzoheri’s Advanced AI Enemy tutorials
+Ali Elzoheri’s YouTube tutorials discuss creating complex AI behaviors in Unreal Engine. Using these techniques, I created group AI behaviors for guards.
+Important concepts I learned from Ali Elzoheri’s youtube tutorials:
+I've watched a lot of his videos, and I've learned from them how he uses the behavior tree to chase the player when he sees and hears enemy sounds,Smart Enemy AI | (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=-t3PbGRazKg (Accessed  14/05/2025).I learned how to create a patrol route using a spline and how enemies follow that route. I also learned how to switch from combat to passive,Smart Enemy AI | (Part 2: Patrolling & States) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=WFV5IewGks8 (Accessed  14/05/2025). I researched and learned how to use AI perception to sense and hearing and how to investigate when enemy hear a noise, how to switch to "investigate" when enemy hear a noise, and how to switch to attack when enemy can see the player.Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=gsyZdKYAT_4 (Accessed  14/05/2025).
+ In addition, I also learned about balanced attack strategies, behavior tree decorations, behavior tree tasks.I also watched Archery Enemy ai tutorial to get some bow mechanics and learn arrow physics.Also, I researched how EQS works in Enemy AI, but I didn't use it in our game because I don't think it's necessary for our game. But if it's needed in the future, I'll do it in our game too.Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=gsyZdKYAT_4 (Accessed  14/05/2025).
+
+
+3. Gorka Games YouTube Tutorials
 The "Enemy AI" tutorial series created by Gorka Games was a very important resource that I used. This tutorial series discusses the process of creating a complete AI system in Unreal Engine step by step.
-Important things I learned from the Gorka Games guides:
+In addition to Gorka's AI reference component, I researched a lot of things from it. I learned from those videos about creating test nodes in the behavior tree, using variables on the blackboard, and implementing combat logic and strategic logic.
 
-Creating the AI ​​Perception Component
-Creating Test Nodes in the Behavior Tree
-Using Blackboard Variables
-Implementing Combat Logic and Patrol Logic
+4. Ryan Lely's AI Combat Systems
+Ryan Lely's set of techniques focuses on combat systems in game AI. Using this set of techniques, I developed combat actions in defensive AI.
+Important concepts that I learned from Ryan Lely's guides:
 
-3. Ali Elzoheiry's Advanced AI Tutorials
-Ali Elzoheiry's workshops and techniques discuss creating more complex AI behaviors in Unreal Engine. Using these techniques, I created Team AI Behaviors for Soldiers and Archers.
-Important concepts I learned from Ali Elzoheiry's workshops:
+Combat transitions
+Dynamic attack patterns
+Responding to player actions
+Attack sensitive zones
 
-Coordinated Attack Strategies
-Ranged Attacker AI - for archers
-Melee Attacker AI - for swordsmen
-
-4. Ryan Laley's AI Combat Systems
-Ryan Laley's set of techniques focuses on combat systems in game AI. Using this set of techniques, I developed the combat actions of the Guards AI.
-Important concepts I learned from Ryan Laley's guides:
-
-Combat Transitions
-Dynamic Attack Patterns
-Response to player actions
-Attack Sensitive Zones
-
-## Implementation (Suggested Word Count 1,100)  
+## Implementation  
 
 ### Process
 The process of developing collobaration game "Project Ebonkeep" took place in several steps as follows:
@@ -119,7 +113,16 @@ Accordingly, we initially planned what types of places and people would be in an
 
 Based on all this information, we created these locations in Unreal Engine. We analyzed our designs in detail and tried to create a beautiful and lively castle environment.
 
-The following pictures show our journey from the beginning of building our castle to today.
+The following pictures show our journey from the beginning of building our castle to today. 
+
+ - This castle picture is we refer to create our Castle 
+
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Refer%20image.png" alt="" width="800" height="350">
+
+
+ - This is how we Start Our Castle 
+ 
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20First%20Step.png" alt="Castle First Step" width="800" height="350">
 
  - #### Character Creation and Design
  Boss Enemy Design
@@ -150,8 +153,6 @@ Player Character
 - Designed as a hero character with a large shield and crossbow
 - A hero wearing a heavy armor with a balance of strength and protection
 - Fire arrows special ability available (after finding a special nutrient liquid)
-
-
 
 ### New Approaches  
 ### Sword Guards and Bow Guards AI Behaviors:
