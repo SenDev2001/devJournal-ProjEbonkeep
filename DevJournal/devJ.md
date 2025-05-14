@@ -224,12 +224,51 @@ Able to obtain information or missions from some villagers
 
 ### Technical Difficulties
 
+## Outcomes (Suggested Word Count 300) 
 
+### Source Code/Project Files
+- Provide a link to your complete source code or project files.  
+- Ensure the link is publicly accessible or shared with the appropriate permissions.  
+- Include a brief description of the files provided, highlighting key components or any instructions required to run the project.
+
+### Build Link
+- Share a link to a playable or executable build of your project.  
+- Ensure the build is accessible across relevant platforms and is publicly accessible.  
+- Include any necessary instructions for running the build, such as system requirements or installation steps.
+
+### Video Demonstration
+
+
+## Reflection (Suggested Word Count 500) 
+
+### Research Effectiveness  
+- Assess the usefulness of the research conducted during the project.  
+- Highlight which sources (games, academic, documentation) had the most significant impact on your work and explain why.  
+- Identify any research gaps or areas where additional information could have improved your project outcomes.
+
+### Positive Analysis 
+- Reflect on the successful aspects of the project.  
+- Highlight specific elements that worked well, such as technical solutions, creative decisions, or user feedback.  
+- Provide evidence to support your analysis, such as test results, screenshots, or user comments.
+
+### Negative Analysis  
+- Identify the areas of the project that did not go as planned or could have been improved.  
+- Discuss challenges you faced, whether technical, creative, or time-related, and evaluate their impact on the final product.  
+- Reflect on any mistakes or missteps and what you learned from them.
+
+### Next Time
+- Outline what you would do differently if you were to undertake a similar project again.  
+- Suggest improvements to your workflow, research methods, or implementation process based on your reflections.  
+- Consider any new tools, techniques, or approaches you would explore in future projects to achieve better results.
 
 ## Bibliography  
 
-## Declared Assets
 
+## Declared Assets
+- Provide a detailed list of any third-party assets used in the project.  
+- This includes asset packs, music, sound effects, 3D models, textures, scripts, or code from external sources.  
+- Declare any use of AI tools (e.g., ChatGPT, GitHub Copilot, Meshy) or pre-existing code. Specify the purpose of these assets/tools and how they were integrated into your work.  
+- Ensure you clearly distinguish between your original work and any external contributions to maintain academic integrity.
 
 <br>
 <br>
