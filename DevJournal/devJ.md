@@ -1,9 +1,9 @@
 # Collobaration Project 
-##### 2412587
-##### Kuranage Senith Madushan Perera
+### 2412587
+### Kuranage Senith Madushan Perera
 
-## Game Artificial Intelligence
-FGCT7011
+## Game Artificial Intelligence - FGCT7011
+
 ## Overview
 This is a collaborative team project for the FGCT7011 Game Artificial Intelligence module. Our game is called “Project Ebonkeep”. This game is a boss fight 3D game with a medieval theme powered by game AI and was created using Unreal Engine 5.
 The main objective of the game is for the player to go to a castle and defeat the AI-controlled guards, sword and bow guards there. After defeating them, the player has to search a special potion and increases his health, unlocks the fire arrow power, and faces the final large golem boss enemy.
@@ -15,7 +15,7 @@ I became interested in behavior trees, AI perception systems (how the AI ​​r
 
 ## Research 
 ### Methodology  
- For this project, I researched several sources related to game AI. Through these researches, I learnt important principles, techniques, and practical examples of applications. I created the AI ​​system of "Project Ebonkeep" using YouTube tutorials from great game developers such as Gorka Games, Ali Elzoheiry, and Ryan Laley. And also i reearched official Unreal Engine documentation, and information available on Unreal Engine Dev community page.
+ For this project, I researched several sources related to game AI. Through these researches, I learnt important principles, techniques, and practical examples of applications. I created the AI ​​system of "Project Ebonkeep" using YouTube tutorials from great game developers such as Gorka Games, Ali Elzoheiry, and Ryan Laley. And also i rearched official Unreal Engine documentation, and information available on Unreal Engine Dev community page.
 
 Through this research, I was able to:
 - Get a deep understanding of Behavior Trees
@@ -31,7 +31,8 @@ Improvement of AI systems based on the experiments
 
 ### Game Sources  
 1. The Witcher 3: Wild Hunt
-The mechanism used for the AI ​​minor enemies (Guards, Bandits) in The Witcher 3 was used as a guide for the swordsmen and archers in our "Project Ebonkeep". In particular, the way enemies explore, detect suspicious activity, and provide early warning of attacks were used. What makes The Witcher 3's AI system unique is its ability to respond to natural routines and the environment.
+The mechanism used for the AI ​​minor enemies (Guards, Bandits) in The Witcher 3 was used as a guide for the swordsmen and archers in our "Project Ebonkeep". In particular, the way enemies explore, detect suspicious activity, and provide early warning of attacks were used. What makes The Witcher 3's AI system unique is its ability to respond to natural routines and the environment.Witcher 3 - The Detailed Life of NPCs (2015) At: https://www.youtube.com/watch?v=9vzzPB6PRsE (Accessed  17/05/2025).
+
 
 I used the following concepts when developing the Guards AI:
 - Patrol Routes
@@ -39,7 +40,8 @@ I used the following concepts when developing the Guards AI:
 - Switching of instruments (Normal, Investigation, Attack)
 
 2. Assassin's Creed Series
-The NPC interaction system in the Assassin's Creed series was a very special source for the development of the AI ​​in my game. The way the NPC characters in this game communicate with each other and how they interact with the player was a big inspiration for me. For example, the way the guards converse with each other, exchange information with each other, and converse with the player is a feature I would like to include in the AI ​​system of my game. I am currently working on adding this feature to the game "Project Ebonkeep".
+The NPC interaction system in the Assassin's Creed series was a very special source for the development of the AI ​​in my game. The way the NPC characters in this game communicate with each other and how they interact with the player was a big inspiration for me. For example, the way the guards converse with each other, exchange information with each other, and converse with the player is a feature I would like to include in the AI ​​system of my game. I am currently working on adding this feature to the game "Project Ebonkeep".Postmortem: AI action planning on Assassin’s Creed Odyssey and Immortals Fenyx Rising (s.d.) At: https://www.gamedeveloper.com/programming/postmortem-ai-action-planning-on-assassins-creed-odyssey-and-immortals-fenyx-rising- (Accessed  17/05/2025).
+
 
 The features that I am implementing from the Assassin's Creed series are:
 
@@ -115,14 +117,19 @@ Based on all this information, we created these locations in Unreal Engine. We a
 
 The following pictures show our journey from the beginning of building our castle to today. 
 
- - This castle picture is we refer to create our Castle 
+ 
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Refer%20image.png" alt="" width="800" height="350">
+Figure 01
+
+This castle picture is we refer to create our Castle 
 
 
- - This is how we Start Our Castle 
  
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20First%20Step.png" alt="Castle First Step" width="800" height="350">
+Figure 02
+
+ This is how we Start Our Castle 
 
  - #### Character Creation and Design
  Boss Enemy Design
@@ -164,6 +171,9 @@ When sound is heard: Activate Investigating State, move towards sound.This AI Pe
    - If there is no doubt after investigation, return to Passive State
 
 Behavior Tree Development and Preview
+
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-09%20140318.png" alt="Castle Updated Stage" width="800">
+
 
  - #### Main Behavior Tree Structure:
   
@@ -227,9 +237,8 @@ Able to obtain information or missions from some villagers
 ## Outcomes (Suggested Word Count 300) 
 
 ### Source Code/Project Files
-- Provide a link to your complete source code or project files.  
-- Ensure the link is publicly accessible or shared with the appropriate permissions.  
-- Include a brief description of the files provided, highlighting key components or any instructions required to run the project.
+https://blueprintue.com/blueprint/k8uh0mvp/ set movement speed
+
 
 ### Build Link
 - Share a link to a playable or executable build of your project.  
@@ -239,27 +248,75 @@ Able to obtain information or missions from some villagers
 ### Video Demonstration
 
 
-## Reflection (Suggested Word Count 500) 
+## Reflection 
 
 ### Research Effectiveness  
-- Assess the usefulness of the research conducted during the project.  
-- Highlight which sources (games, academic, documentation) had the most significant impact on your work and explain why.  
-- Identify any research gaps or areas where additional information could have improved your project outcomes.
+The research I did for this project was extremely valuable and useful. In particular, I learned new things about Behavior Trees and AI Perception methods in Unreal Engine. The guidance of instructors like Gorka Games and Ali Elzoheri on YouTube helped me gain a deeper understanding. Through this research, I understood how AI Agents work in different ways.
+This research had a very positive impact on my project. In particular, I was able to create AI systems for swordsmen, archers, and villagers. However, if I had more time, I would have liked to do more research on EQS (Environment Query System) and NPC relationship systems.
 
 ### Positive Analysis 
-- Reflect on the successful aspects of the project.  
-- Highlight specific elements that worked well, such as technical solutions, creative decisions, or user feedback.  
-- Provide evidence to support your analysis, such as test results, screenshots, or user comments.
+There are a number of successful aspects of this project that I can be very happy about:
+
+- Archer and Swordsman AI Systems: 
+
+Although I originally planned to create only swordsmen, I was eventually able to include archers as well. I successfully implemented the crossbow function for the bow attack mechanic. I created this process to shoot the crossbow arrow towards the player's location. Although this was a very complex process, it was successfully completed.
+
+- AI Perception System:
+
+ I developed an AI Perception system so that the troops could react accordingly when they saw the player and heard sounds. In particular, I created this system so that when the troops heard a sound, they could check the location and investigate the sound. This was one of my favorite processes.
+
+- NPC Villagers: 
+
+Although it was my first time working on a project using Unreal Engine, I was able to create simple NPC villagers. I created how they go about their daily lives by visiting different places in the village.
+Creating Behavior Trees: Through this project, I gained a deep understanding of creating Behavior Trees. In particular, I learned about the use of Task, Sequence, Selector, Decorator, and Service nodes.
+
+- Team Collaboration:
+
+ Despite all the challenges, it was a great achievement to be able to work together with the rest of the team and successfully complete the project. Especially, even though Unreal Engine was new to all of us, in the end we created a successful game.
 
 ### Negative Analysis  
-- Identify the areas of the project that did not go as planned or could have been improved.  
-- Discuss challenges you faced, whether technical, creative, or time-related, and evaluate their impact on the final product.  
-- Reflect on any mistakes or missteps and what you learned from them.
+This project also had some shortcomings and challenges:
+
+- Time Limit:
+
+ Since this was my first Unreal Engine project, it was a challenge to do this project while still learning it. Due to time constraints, I was unable to implement my plan to give the player the ability to change weapons (such as swords, bows, etc.).
+
+- NPC Communication:
+
+ My original plan was to create a system that would allow NPC villagers to communicate with each other and with the player. However, this was not feasible due to time and experience constraints.
+Technical Challenges: Learning about Unreal Engine’s Behavior Trees and AI Perception methods was challenging. Sometimes it took me a long time to fix bugs.
+GitHub and Team Collaboration Issues: Since we were all new to a collaborative project, we ran into a number of serious GitHub issues:
+
+- Git LFS:
+
+ There were issues using Git LFS (Large File Storage) to handle large files. We had to pay to fix this.
+Wrong Version Conflicts: When some members pushed changes with the wrong Unreal Engine version, the project completely crashed. We had to revert to the previous version to fix this.
+Team Member Dropouts: Due to these technical issues, some team members dropped out of the project, thinking we couldn't finish it. This affected the morale of the rest of the team.
 
 ### Next Time
-- Outline what you would do differently if you were to undertake a similar project again.  
-- Suggest improvements to your workflow, research methods, or implementation process based on your reflections.  
-- Consider any new tools, techniques, or approaches you would explore in future projects to achieve better results.
+For the next time, I would change the following things:
+
+-  NPC Communication System: 
+
+Next time, I would like to create a full conversation system where NPC villagers can communicate with each other and with the player.
+Improved Weapon System: Give the player the ability to change different weapons and use different types of attack methods.
+
+
+- More Complex Behavior Trees:
+
+ I would like to create more complex AI systems using EQS (Environment Query System). This will help the troops make more intelligent decisions.
+Advance Planning and Training: Next time, I would like to gain more understanding of Unreal Engine before starting the project. This will allow me to work more efficiently.
+
+- Better Team Collaboration:
+
+ In the next project, I will try to establish a proper Git methodology from the beginning of the project:
+
+Conduct a training session on Git and Git LFS for all team members.
+Adopt the correct Unreal Engine version and common settings among all members.
+Establish clear rules for adding, modifying, and removing files.
+Maintain better communication between team members.
+
+Through this project, I learned a lot about Behavior Trees, AI Perception, and Blueprint Programming in Unreal Engine. Not only that, I also gained valuable experience in the challenges that can arise when working on a collaborative project and how to overcome them. This was a valuable experience for my future projects.
 
 ## Bibliography  
 
