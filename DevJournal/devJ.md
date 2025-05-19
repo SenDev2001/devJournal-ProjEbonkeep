@@ -170,6 +170,34 @@ When sound is heard: Activate Investigating State, move towards sound.This AI Pe
    - When sound is heard, investigate the direction of sound
    - If there is no doubt after investigation, return to Passive State
 
+
+### Villager NPC System
+Apart from Guard AI, I also created Villager NPC characters, they have behavior trees instead of Using Common Blueprints:
+
+Villager Blueprint Setup:
+
+Created a Character Blueprint
+Change locations periodically during Event Tick
+Respond to AI Perception
+
+Villager Behavior:
+
+Daily Activities: Villagers move between shops, gardens, and other areas during the day
+When seeing the player: Stop, turn towards the player, wave, or talk
+When seeing a battle: Run away in fear, hide
+
+Player Interaction:
+
+Display a simple dialogue system when the player talks to the villagers
+Able to obtain information or missions from some villagers
+### Testing
+
+
+### Technical Difficulties
+
+## Outcomes (Suggested Word Count 300) 
+
+### Source Code/Project Files
 Behavior Tree Development and Preview
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-09%20140318.png" alt="Castle Updated Stage" width="800">
@@ -210,34 +238,25 @@ In Sequence Node:
 - BTT_MovePatrolRoute: Move along Patrol Route
 - Wait (Random 2-5 seconds): Pause
 
-### Villager NPC System
-Apart from Guard AI, I also created Villager NPC characters, they have behavior trees instead of Using Common Blueprints:
-
-Villager Blueprint Setup:
-
-Created a Character Blueprint
-Change locations periodically during Event Tick
-Respond to AI Perception
-
-Villager Behavior:
-
-Daily Activities: Villagers move between shops, gardens, and other areas during the day
-When seeing the player: Stop, turn towards the player, wave, or talk
-When seeing a battle: Run away in fear, hide
-
-Player Interaction:
-
-Display a simple dialogue system when the player talks to the villagers
-Able to obtain information or missions from some villagers
-### Testing
-
-
-### Technical Difficulties
-
-## Outcomes (Suggested Word Count 300) 
-
-### Source Code/Project Files
 https://blueprintue.com/blueprint/k8uh0mvp/ set movement speed
+
+https://blueprintue.com/blueprint/r5ar0qlb/ sword guard attack
+
+https://blueprintue.com/blueprint/g4a0etc3/ damage and death
+
+https://blueprintue.com/blueprint/-5h48wdt/ sword guard health bar widget 
+
+https://blueprintue.com/blueprint/7zk9a1-4/ patrol route increment
+
+https://blueprintue.com/blueprint/ps7tlgw8/ get spline point as world position
+
+https://blueprintue.com/blueprint/y72jyfud/ aic guards
+
+https://blueprintue.com/blueprint/80zg2b8y/ BP Villager
+
+https://blueprintue.com/blueprint/y_-77ewl/ Bow Guard attack
+
+
 
 
 ### Build Link
