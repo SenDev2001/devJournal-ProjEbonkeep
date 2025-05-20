@@ -229,12 +229,12 @@ Able to obtain information or missions from some villagers
 ## Outcomes (Suggested Word Count 300) 
 
 ### Source Code/Project Files
-Behavior Tree Development and Preview
+  - #### Behavior Tree Development and Preview
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-09%20140318.png" alt="Castle Updated Stage" width="800">
 
 
- - #### Main Behavior Tree Structure:
+ -  Main Behavior Tree Structure:
   
   I set up a Selector Node to select the three main AI states:
   -  Combat State
@@ -267,7 +267,40 @@ In Sequence Node:
 
 - BTT_SetMovementSpeed: Set Normal Walking Speed
 - BTT_MovePatrolRoute: Move along Patrol Route
-- Wait (Random 2-5 seconds): Pause
+- Wait (Random 2-5 seconds): Pause 
+
+This behavior tree controls the behavior of Swor guards. Basically, the guard patrols a designated path at normal speed. If a noise is heard, the guard quickly moves to the location and checks. If no one is seen, it reverts back to normal patrol. When the player is seen, the guard switches to combat mode, focuses on him, and quickly approaches and attacks the player.
+I use the same setup for the bow guards, but I have removed the "Move To player" action. Since the archers are on the gates, they do not need to move to the player. All other actions work the same way, and when they see the player or hear a sound, they shoot at the player.
+
+  - #### Guards AI controller 
+   - Evenet Graph
+https://blueprintue.com/blueprint/y72jyfud/ 
+
+This Blueprint is an Event Graph for an AIC_Guard (AI Controller). This is a behavior tree attached to an AI Guard, which is configured to detect the player through the AI ​​Perception system and respond accordingly.
+Here, when the Guard is possessed, the behavior tree runs. After that, a state called “Passive” is set. An updated list of actors is obtained through the Perception system through the Sight or Hearing sense. This actors list is iterated through a loop, and the Guard is asked whether the player has been seen (Sight) or heard (Hearing).
+If the player has been seen through Sight, the Handle Sensed Sight function is called.
+If a sound has been heard through Hearing, the stimulus is broken and the location is sent to the Handle Sensed Noise function.
+Finally, this is the process of how the Guard detects the player and responds to it 
+
+  - Set state as passive 
+  https://blueprintue.com/blueprint/kg07of0i/
+
+This Blueprint function is called "Set State as Passive". It is used to update the state of the Blackboard in the Unreal Engine AI Controller (AIC_Guard) to Passive. Here, a Set Value as Enum node assigns the Passive value of the E_AIState Enum to a Key of an Enum type in the Blackboard. This is a process to make the Guard AI's behavior silent, non-contradictory. This is part of a state machine setup that symbolizes the transitions between states of the AI ​​system.
+
+  - Set state as Attacking 
+https://blueprintue.com/blueprint/7fnwaspi/
+
+This Blueprint process is called "Set State as Attacking". This is what sets a Guard AI in an Unreal Engine AI Controller to enter an active attacking state. First, the "Set Value as Object" node assigns the target object launched as "Attack Player" to the Object key specified as "Attack Target Key Name" in the Blackboard. This helps the Guard AI decide who to attack.
+Next, a "Set Value as Enum" node assigns the value **Attacking** from the "E_AIState" enum to the Enum key specified as "State Key Name" in the Blackboard. This updates the Guard AI's internal state to "Attacking".
+This process updates the necessary Blackboard Variables to trigger **a powerful and aggressive attacking behavior** in the Guard AI. This strengthens the functionality of the AI ​​Behavior Tree and helps the AI ​​behave in a way that is authentic and realistic.
+
+
+ - Set state as Investigate 
+ https://blueprintue.com/blueprint/qe5khhb8/
+
+
+
+
 
 https://blueprintue.com/blueprint/k8uh0mvp/ set movement speed
 
@@ -281,7 +314,7 @@ https://blueprintue.com/blueprint/7zk9a1-4/ patrol route increment
 
 https://blueprintue.com/blueprint/ps7tlgw8/ get spline point as world position
 
-https://blueprintue.com/blueprint/y72jyfud/ aic guards
+
 
 https://blueprintue.com/blueprint/80zg2b8y/ BP Villager
 
@@ -290,19 +323,20 @@ https://blueprintue.com/blueprint/y_-77ewl/ Bow Guard attack
 
 
 
-### Build Link
-- Share a link to a playable or executable build of your project.  
-- Ensure the build is accessible across relevant platforms and is publicly accessible.  
-- Include any necessary instructions for running the build, such as system requirements or installation steps.
+### Build Links
 
-### Video Demonstration
+#### GitHub Link -https://github.com/SenDev2001/ProjectEbonkeep
+#### Game Link - 
+
+
+### Video Demonstration -
 
 
 ## Reflection 
 
 ### Research Effectiveness  
 The research I did for this project was extremely valuable and useful. In particular, I learned new things about Behavior Trees and AI Perception methods in Unreal Engine. The guidance of instructors like Gorka Games and Ali Elzoheri on YouTube helped me gain a deeper understanding. Through this research, I understood how AI Agents work in different ways.
-This research had a very positive impact on my project. In particular, I was able to create AI systems for swordsmen, archers, and villagers. However, if I had more time, I would have liked to do more research on EQS (Environment Query System) and NPC relationship systems.
+This research had a very positive impact on my project. In particular, I was able to create AI systems for swords guards, archers(Bow guards), and NPC villagers. However, if I had more time, I would have liked to do more research on EQS (Environment Query System) and NPC relationship systems.
 
 ### Positive Analysis 
 There are a number of successful aspects of this project that I can be very happy about:
