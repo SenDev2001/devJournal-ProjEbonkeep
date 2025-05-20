@@ -324,7 +324,7 @@ https://blueprintue.com/blueprint/y_-77ewl/ Bow Guard attack
 
 
 ### Build Links
-
+ - ## "We made this game in Unreal Engine 5.4 because that's the version available on the university computers. However, one of our team members used Unreal Engine 5.5.4 and pushed their changes. Now we're in the final days before submission and don't have time to fix it. When you open the project, it opens in 5.5.4."
 #### GitHub Link -https://github.com/SenDev2001/ProjectEbonkeep
 #### Game Link - 
 
