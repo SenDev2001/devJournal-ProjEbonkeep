@@ -120,6 +120,7 @@ The following pictures show our journey from the beginning of building our castl
  
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Refer%20image.png" alt="" width="800" height="350">
+
 Figure 01
 
 This castle picture is we refer to create our Castle 
@@ -127,7 +128,37 @@ This castle picture is we refer to create our Castle
 
  
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20First%20Step.png" alt="Castle First Step" width="800" height="350">
+
 Figure 02
+
+
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20Parts.jpg" alt="Castle Parts" width="800" height="350">
+
+Figure 3
+
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20walls.png" alt="Castle Walls" width="800" height="350">
+
+Figure 4
+
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/CastleGRey.png" alt="Castle Grey" width="800" height="350">
+
+Figure 5
+
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/castle%20inside.png" alt="Castle Inside" width="800" height="350">
+
+Figure 6
+
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/castle%20gates.png" alt="Castle Gates" width="800" height="350">
+
+figure 7
+
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20Errors.png" alt="Castle Errors" width="800" height="350">
+
+figure 8
+
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20With%20rain.png" alt="Castle With Rain" width="800" height="350">
+
+Figure 9
 
  This is how we Start Our Castle 
 
