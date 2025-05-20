@@ -404,15 +404,30 @@ Through this project, I learned a lot about Behavior Trees, AI Perception, and B
 
 ## Bibliography  
 
+- Behavior Trees in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-trees-in-unreal-engine (Accessed  13/05/2025).
+
+- Postmortem: AI action planning on Assassin’s Creed Odyssey and Immortals Fenyx Rising (s.d.) At: https://www.gamedeveloper.com/programming/postmortem-ai-action-planning-on-assassins-creed-odyssey-and-immortals-fenyx-rising- (Accessed  17/05/2025).
+
+- Smart Enemy AI | (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=-t3PbGRazKg (Accessed  14/05/2025).
+
+- Smart Enemy AI | (Part 2: Patrolling & States) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=WFV5IewGks8 (Accessed  14/05/2025).
+
+- Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=gsyZdKYAT_4 (Accessed  14/05/2025).
+
+- Smart Enemy AI |  (Part 4:  EQS) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=Oy_LojjRiWo (Accessed  14/05/2025).
+
+- Witcher 3 - The Detailed Life of NPCs (2015) At: https://www.youtube.com/watch?v=9vzzPB6PRsE (Accessed  17/05/2025).
+
+
 
 ## Declared Assets
-- Provide a detailed list of any third-party assets used in the project.  
-- This includes asset packs, music, sound effects, 3D models, textures, scripts, or code from external sources.  
-- Declare any use of AI tools (e.g., ChatGPT, GitHub Copilot, Meshy) or pre-existing code. Specify the purpose of these assets/tools and how they were integrated into your work.  
-- Ensure you clearly distinguish between your original work and any external contributions to maintain academic integrity.
+- Mixamo -
 
-<br>
-<br>
-<br>
-<br>
+Sword Guard - https://www.mixamo.com/#/?page=1&type=Character (PALADIN L NORDSTORM)
 
+Bow Guard - https://sketchfab.com/3d-models/medieval-guard-ca548172f0984660bc4213b9404284fa
+
+- Sketchfab -
+
+ NPC Villager- 
+ https://sketchfab.com/3d-models/medieval-civilian-3-d99ca22f06134e8dab28fdfa75d87f31 (CIVILIAN 3)
