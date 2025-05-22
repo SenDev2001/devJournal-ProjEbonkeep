@@ -4,11 +4,6 @@
 
 ## Game Artificial Intelligence - FGCT7011
 
-## Major Links
-### GitHub Link -https://github.com/SenDev2001/ProjectEbonkeep
-### Game Link - 
-
-
 ## Overview
 This is a collaborative team project for the FGCT7011 Game Artificial Intelligence module. Our game is called “Ebonkeep”. This game is a boss fight 3D game with a medieval theme powered by game AI and was created using Unreal Engine 5.
 The main objective of the game is for the player to go to a castle and defeat the AI-controlled guards, sword and bow guards there. After defeating them, the player has to search a special potion and increases his health, unlocks the fire arrow power, and faces the final large golem boss enemy.
@@ -20,7 +15,7 @@ I became interested in behavior trees, AI perception systems (how the AI ​​r
 
 ## Research 
 ### Methodology  
- For this project, I researched several sources related to game AI. Through these researches, I learnt important principles, techniques, and practical examples of applications. I created the AI ​​system of "Project Ebonkeep" using YouTube tutorials from great game developers such as Gorka Games, Ali Elzoheiry, and Matt Aspland.And also i researched official Unreal Engine documentation, and information available on Unreal Engine Dev community page.
+ For this project, I researched several sources related to game AI. Through these researches, I learnt important principles, techniques, and practical examples of applications. I created the AI ​​system of "Ebonkeep" using YouTube tutorials from great game developers such as Gorka Games, Ali Elzoheiry, and Matt Aspland. And also i researched official Unreal Engine documentation, and information available on Unreal Engine Dev community page.
 
 Through this research, I was able to:
 - Get a deep understanding of Behavior Trees
@@ -35,7 +30,7 @@ My research methodology includes the following steps:
 - Improvement of AI systems based on the experiments
 
 ### Game Sources  
-1. The Witcher 3: Wild Hunt
+The Witcher 3: Wild Hunt
 The mechanism used for the AI ​​minor enemies (Guards, Bandits) in The Witcher 3 was used as a guide for the swordsmen and archers in our "Project Ebonkeep". In particular, the way enemies explore, detect suspicious activity, and provide early warning of attacks were used. What makes The Witcher 3's AI system unique is its ability to respond to natural routines and the environment. (Witcher 3 - The Detailed Life of NPCs, 2015)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/9vzzPB6PRsE?si=spxLxoh6M9a7pli8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -45,7 +40,7 @@ The mechanism used for the AI ​​minor enemies (Guards, Bandits) in The Witch
    - Suspicious Activity Detection
    - Switching of instruments (Normal, Investigation, Attack)
 
-2. Assassin's Creed Series
+Assassin's Creed Series
 The NPC interaction system in the Assassin's Creed series was a very special source for the development of the AI ​​in my game. The way the NPC characters in this game communicate with each other and how they interact with the player was a big inspiration for me. For example, the way the guards converse with each other, exchange information with each other, and converse with the player is a feature I would like to include in the AI ​​system of my game. I am currently working on adding this feature to the game "Project Ebonkeep".(Postmortem: AI action planning on Assassin’s Creed Odyssey and Immortals Fenyx Rising, s.d.)
 
 
@@ -57,7 +52,7 @@ The NPC interaction system in the Assassin's Creed series was a very special sou
    - Exchange of information between NPCs about suspicious activity
 
 ### Documentation Sources  
-1. Unreal Engine Documentation -(Behavior Trees in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.)
+Unreal Engine Documentation -(Behavior Trees in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.)
 The official Unreal Engine documentation provides a detailed guide to Behavior Trees. 
 Using this documentation, I learned about the use of Blackboards, Decorator and Service nodes, and Task nodes.
 
@@ -68,7 +63,7 @@ Important concepts I learned from the Unreal Engine documentation:
 - Behavior Tree Services
 - Behavior Tree Tasks
 
-2. Ali Elzoheri’s Advanced AI Enemy tutorials.
+Ali Elzoheri’s Advanced AI Enemy tutorials.
 
 Ali Elzoheri’s YouTube tutorials discuss creating complex AI behaviors in Unreal Engine. Using these techniques, I created group AI behaviors for guards.
 Important concepts I learned from Ali Elzoheri’s youtube tutorials:
@@ -78,10 +73,10 @@ I learned how to create a patrol route using a spline and how enemies follow tha
 <iframe width="560" height="315" src="https://www.youtube.com/embed/-t3PbGRazKg?si=5_4OgNoSzBPAdlPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
- In addition, I also learned about balanced attack strategies, behavior tree decorations, behavior tree tasks.I also watched Archery Enemy ai tutorial to get some bow mechanics and learn arrow physics.Also, I researched how EQS works in Enemy AI, but I didn't use it in our game because I don't think it's necessary for our game. But if it's needed in the future, I'll do it in our game too. (Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5), 2023).
+In addition, I also learned about balanced attack strategies, behavior tree decorations, behavior tree tasks.I also watched Archery Enemy ai tutorial to get some bow mechanics and learn arrow physics.Also, I researched how EQS works in Enemy AI, but I didn't use it in our game because I don't think it's necessary for our game. But if it's needed in the future, I'll do it in our game too. (Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5), 2023).
 
 
-3. Gorka Games YouTube Tutorials
+Gorka Games YouTube Tutorials
 
 The "Enemy AI" tutorial series created by Gorka Games was a very important resource that I used. This tutorial series discusses the process of creating a complete AI system in Unreal Engine step by step.(How to Make a Simple Behavior Tree in Unreal Engine 5 - Advanced AI, 2022).
 In addition to Gorka's AI reference component, I researched a lot of things from it. I learned from those videos about creating test nodes in the behavior tree, using variables on the blackboard, and implementing combat logic and strategic logic. (Unreal Engine 5 RPG Tutorial Series - #21: AI Detection and Chasing, 2023).
@@ -93,7 +88,7 @@ In addition to Gorka's AI reference component, I researched a lot of things from
  <iframe width="560" height="315" src="https://www.youtube.com/embed/8skq8t_Fffk?si=FLv3GJDvs8QY1x-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-4. Matt Aspland YouTube Tutorials
+Matt Aspland YouTube Tutorials
 I researched Matt Aspland's AI random roaming tutorial to create our game npc villager random walk and I change it to When npc see the player npc stop. (AI Random Roam | Basic Roaming - Unreal Engine 5 Tutorial, 2022).
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Mi7r0LqUmOE?si=ivO0B6tONcINdJJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
@@ -102,7 +97,7 @@ I researched Matt Aspland's AI random roaming tutorial to create our game npc vi
 ## Implementation  
 
 ### Process
-The process of developing collaboration game "Project Ebonkeep" took place in several steps as follows:
+The process of developing collaboration game "Ebonkeep" took place in several steps as follows:
 #### Project Initiation and Planning
  - #### Initial Inspiration and Concept
 When our team first discussed creating a game for the Collaboration project, we decided to take on the challenge of creating a game with outstanding AI, even though we were all new to Unreal Engine . After discussion, we decided to create a boss battle game with a medieval theme and using Unreal Engine 5.4 because in pur university PCs are using this version.
@@ -112,46 +107,45 @@ We had six team members, and their tasks were divided as follows:
   - Two programmers (making AI Guards, The Boss guards and NPC Villagers)
   - One designer (level design and game mechanics)
 
-My role was to develop the guard AI (swordsmen and archers) and the villagers' behaviors.
+My role was to develop the behaviors of the AI Sword guards,Bow guards (Archers) and villagers. Here I got to learn big game AI concepts like Behavior Trees, AI Perception, and Blackboard setup and AI controller. Through this process, I improved my skills in creating AI behaviors.
+
  - #### Castle Planning
 We first thought about what we wanted the castle to look like. In keeping with the theme of our game, we decided to create a castle that was designed to resemble a large and ancient.
 Accordingly, we initially planned what types of places and people would be in and around the castle.
  ##### Inside the castle:
 
-- Swordsmith – to give the player the ability to craft weapons.
+- Swordsmith –This character does not craft weapons for the player. Instead, he acts as a single point of contact for power-up arrows. The player can obtain special power-up arrows from him, such as Fire Arrows, which can be used to deal extra damage in boss battles or against special guards. These weapons are essential to the game's progression and victory.
 
-- Bakery – to represent the daily life of the villagers.
+- Bakery – This location, which represents village life, can be used by the player for health regeneration. At the bakery, the player can buy food such as wet bread, cakes, and dry foods. Using these foods, the player can regain their health, playing a role similar to a Health Potion in gameplay.
 
-- Shops and Village – as an area where the general public lives.
+- Shops and Village – This area brings the life of the people to life. Various shops, residences, and the daily lives of the villagers are shown here, and the player can purchase some fashionable or gameplay-based items. The Villager AI is constantly active here and their behavior can change based on the player's actions.
 
-- Guards and Villagers – as constant agents that act in AI processes.
+- Guards and Villagers – These characters are the basis for AI processes. The guards patrol and respond to actions such as the player breaking down walls or attacking villagers. The Villager AI represents normal life and keeps the gameplay environment alive.
 
-- Training Area – to train the guards and provide combat training for the player.
+- Training Area – This is a training area for the guards, where the player can practice their weaponry, climbing, and combat skills. This is an important area for player progression in the gameplay.
 
-- Main Boss Arena – a large area suitable for the final main battle.
+- Main Boss Arena – This is a large area designed for the final and most challenging battle in the game. Here, the player must face a deadly threat using power-ups such as Fire Arrows. The environment, the action, and the heat of battle are at their highest level.
 
-Based on all this information, we created these locations in Unreal Engine. We analyzed our designs in detail and tried to create a beautiful and lively castle environment.
+We created all of these locations as a detailed project in Unreal Engine. Throughout the design process, we meticulously planned the gameplay-related factors, the environment, the AI, and the environment. In this way, the Castle environment we created became a lively, magnificent, and stylish environment.
 
-The following pictures show our journey from the beginning of building our castle to today. 
+The photos below help show our journey from the beginning of the creation of this Castle to today.. 
 
  
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Refer%20image.png" alt="" width="800" height="350">
 
-Figure 01
-
-This castle picture is we refer to create our Castle.
+Figure 01 - This castle picture is we refer to create our Castle.
 
 
  
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20First%20Step.png" alt="Castle First Step" width="800" height="350">
 
-Figure 02
+Figure 02 - This is how we first made our castle gray box
 
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20Parts.jpg" alt="Castle Parts" width="800" height="350">
 
-Figure 3
+Figure 3 - 
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20walls.png" alt="Castle Walls" width="800" height="350">
 
@@ -254,6 +248,11 @@ Able to obtain information or missions from some villagers
 
 ## Outcomes
 
+### Build Link
+
+
+### GitHub Link
+https://github.com/SenDev2001/ProjectEbonkeep
 ### Source Code/Project Files
   - #### Behavior Tree Development and Preview
 
