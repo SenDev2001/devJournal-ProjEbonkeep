@@ -334,6 +334,9 @@ https://blueprintue.com/blueprint/y_-77ewl/ Bow Guard attack
 
 ### Video Demonstration -
 
+https://youtu.be/B3lbsZjUn3I Sword Guards and NPCs
+
+https://youtu.be/CvXdapR6qXc Bow guards
 
 ## Reflection 
 
