@@ -6,7 +6,7 @@
 
 ## Overview
 This is a collaborative team project for the FGCT7011 Game Artificial Intelligence module. Our game is called “Ebonkeep”. This game is a boss fight 3D game with a medieval theme powered by game AI and was created using Unreal Engine 5.
-The main objective of the game is for the player to go to a castle and defeat the AI-controlled guards, sword and bow guards there. After defeating them, the player has to search a special potion and increases his health, unlocks the fire arrow power, and faces the final large golem boss enemy.
+The main objective of the game is for the player to go to a castle and defeat the AI-controlled guards, sword and bow guards there. After defeating them, the player has to search a special potion and increases his health, unlocks the fire arrow power, and faces the final large golden golem boss enemy.
 The golem boss, sword guards and bow guards all of these are created using behavior trees and blueprints. Additionally, the game also has NPC characters called villagers. We do not use behavior trees for them, but only regular blueprints.
 Our team consists of six people: three artists, two programmers and a designer. Everyone was new to Unreal Engine. So it was important to learn from each other on the project. When one didn’t know, the other helped. By being able to work well in a team environment.
 My contribution to this project was to create smart AI Guards using behaviour trees. This included both sword guards and bow guards. Another contribution was to create the villagers NPC characters. Although the villager AI didn’t use behavior trees and i used blueprint and AI perception for them.
@@ -41,7 +41,7 @@ The mechanism used for the AI ​​minor enemies (Guards, Bandits) in The Witch
    - Switching of instruments (Normal, Investigation, Attack)
 
 Assassin's Creed Series
-The NPC interaction system in the Assassin's Creed series was a very special source for the development of the AI ​​in my game. The way the NPC characters in this game communicate with each other and how they interact with the player was a big inspiration for me. For example, the way the guards converse with each other, exchange information with each other, and converse with the player is a feature I would like to include in the AI ​​system of my game. I am currently working on adding this feature to the game "Project Ebonkeep".(Postmortem: AI action planning on Assassin’s Creed Odyssey and Immortals Fenyx Rising, s.d.)
+The NPC interaction system in the Assassin's Creed series was a very special source for the development of the AI ​​in my game. The way the NPC characters in this game communicate with each other and how they interact with the player was a big inspiration for me. For example, the way the guards converse with each other, exchange information with each other, and converse with the player is a feature I would like to include in the AI ​​system of my game. I am currently working on adding this feature to the game "Ebonkeep".(Postmortem: AI action planning on Assassin’s Creed Odyssey and Immortals Fenyx Rising, s.d.)
 
 
    The features that I am implementing from the Assassin's Creed series are:
@@ -100,7 +100,7 @@ I researched Matt Aspland's AI random roaming tutorial to create our game npc vi
 The process of developing collaboration game "Ebonkeep" took place in several steps as follows:
 #### Project Initiation and Planning
  - #### Initial Inspiration and Concept
-When our team first discussed creating a game for the Collaboration project, we decided to take on the challenge of creating a game with outstanding AI, even though we were all new to Unreal Engine . After discussion, we decided to create a boss battle game with a medieval theme and using Unreal Engine 5.4 because in pur university PCs are using this version.
+When our team first discussed creating a game for the Collaboration project, we decided to take on the challenge of creating a game with outstanding AI, even though we were all new to Unreal Engine . After discussion, we decided to create a boss battle game with a medieval theme and using Unreal Engine 5.4 because in our university PCs are using this version.
  - #### Team Members and Task Distribution
 We had six team members, and their tasks were divided as follows:
   - Three artists (3D modeling, animation, and environment design)
@@ -177,8 +177,11 @@ Figure 9
  This is how we Start Our Castle 
 
  - #### Character Creation and Design
- Boss Enemy Design
+ #### Boss Enemy Design
 Creating the final boss, the massive Gold Golem:
+
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-22%20192938.png" alt="New Scene" height="450">
+
 
 Conceptual Phase - Our artists created concept drawings of a large, fearsome Gold Golem, with lion faces on both shoulders.
 AI Behavior Design - A complex behavior tree for the boss was created by our other programmer, including the following special abilities:
@@ -188,29 +191,38 @@ AI Behavior Design - A complex behavior tree for the boss was created by our oth
 
 Coordination - I helped my colleague build the boss AI, especially with bug fixes and performance improvements.
 
-Guard AI Design
+#### Guard AI Design
 I designed my main role, the Guard AI, as follows:
 
 Bow Guard Design
+
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230735.png" alt="Castle Scene" height="450">
+
 - Designed as a typical medieval archer
 - Attacks from a distance using a crossbow
 - Positioned on high walls and towers
 
+
 Sword Guard Design
+
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230720.png" alt="Updated Scene" height="350">
+
 - Designed as a medieval knight character with a war shield and sword
 - Attacks in close combat using a protective shield and a strong sword
 - Deployed inside castle areas, they follow a patrol route every time they patrol
-<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230720.png" alt="Updated Scene" height="350">
 
-NPC Villagers
-- Deployed inside cstle, AI random roaming.
+
+#### NPC Villagers
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230706.png" alt="Updated Scene" height="450">
 
+- Deployed inside castle, AI random roaming.
 
-Player Character
+
+#### Player Character Design
 - Designed as a hero character with a large shield and crossbow
 - A hero wearing a heavy armor with a balance of strength and protection
 - Fire arrows special ability available (after finding a special nutrient liquid)
+
 
 ### New Approaches  
 ### Sword Guards and Bow Guards AI Behaviors:
@@ -241,10 +253,19 @@ Player Interaction:
 
 Display a simple dialogue system when the player talks to the villagers
 Able to obtain information or missions from some villagers
-### Testing
-
 
 ### Technical Difficulties
+
+- Wrong Unreal Version:
+We made this game in Unreal Engine 5.4 because that's the version available on the university computers. However, one of our team members used Unreal Engine 5.5.4 and pushed their changes. Now we're in the final days before submission and don't have time to fix it.
+
+  "When you open the project, it opens in 5.5.4."
+
+- Git LFS:
+
+ There were issues using Git LFS (Large File Storage) to handle large files. We had to pay to fix this.
+Wrong Version Conflicts: When some members pushed changes with the wrong Unreal Engine version, the project completely crashed. We had to revert to the previous version to fix this.
+Team Member Dropouts: Due to these technical issues, some team members dropped out of the project, thinking we couldn't finish it. This affected the morale of the rest of the team.
 
 ## Outcomes
 
@@ -295,7 +316,7 @@ In Sequence Node:
 - Wait (Random 2-5 seconds): Pause 
 
 This behavior tree controls the behavior of Sword guards. Basically, the guard patrols a designated path at normal speed. If a noise is heard, the guard quickly moves to the location and checks. If no one is seen, it reverts back to normal patrol. When the player is seen, the guard switches to combat mode, focuses on him, and quickly approaches and attacks the player.
-I use the same setup for the bow guards, but I have removed the "Move To player" action and "BIsBlocking". Since the archers are on the gates, they do not need to move to the player they cann not block with crossbow. All other actions work the same way, and when they see the player or hear a noise, they shoot at the player.
+I use the same setup for the bow guards, but I have removed the "Move To player" action and "BIsBlocking". Since the archers are on the gates, they do not need to move to the player they can not block with crossbow. All other actions work the same way, and when they see the player or hear a noise, they shoot at the player.
 
   - #### Guards AI controller 
    - Evenet Graph
@@ -379,18 +400,21 @@ This research had a very positive impact on my project. In particular, I was abl
 ### Positive Analysis 
 There are a number of successful aspects of this project that I can be very happy about:
 
-- Archer and Swordsman AI Systems: 
+- Learning Unreal and AI game development
 
-Although I originally planned to create only swordsmen, I was eventually able to include archers as well. I successfully implemented the crossbow function for the bow attack mechanic. I created this process to shoot the crossbow arrow towards the player's location. Although this was a very complex process, it was successfully completed.
+Although it was my first time working on a project using Unreal Engine, I was able to create simple NPC villagers. I created how they go about their daily lives by visiting different places in the village.
+Creating Behavior Trees: Through this project, I gained a deep understanding of creating Behavior Trees. In particular, I learned about the use of Task, Sequence, Selector, Decorator, and Service nodes.
+
+- Bow Guards and Sword Guards AI Systems: 
+
+Although I originally planned to create only sword guards, I was eventually able to include bow guards as well. However I successfully implemented the crossbow function for the bow attack mechanics to bow guards. I created this process to shoot the crossbow arrow towards the player's location. Although this was a very complex process, it was successfully completed.
 
 - AI Perception System:
 
  I developed an AI Perception system so that the troops could react accordingly when they saw the player and heard sounds. In particular, I created this system so that when the troops heard a sound, they could check the location and investigate the sound. This was one of my favorite processes.
 
 - NPC Villagers: 
-
-Although it was my first time working on a project using Unreal Engine, I was able to create simple NPC villagers. I created how they go about their daily lives by visiting different places in the village.
-Creating Behavior Trees: Through this project, I gained a deep understanding of creating Behavior Trees. In particular, I learned about the use of Task, Sequence, Selector, Decorator, and Service nodes.
+Although this wasn't my main work, I started creating NPC villagers to make our game look more natural. I was able to create simple NPCs. I made them randomly move around the entire castle village and stop when they saw the player.
 
 - Team Collaboration:
 
@@ -398,9 +422,6 @@ Creating Behavior Trees: Through this project, I gained a deep understanding of 
 
 ### Negative Analysis  
 This project also had some shortcomings and challenges:
-
-- Wrong Unreal Version:
-We made this game in Unreal Engine 5.4 because that's the version available on the university computers. However, one of our team members used Unreal Engine 5.5.4 and pushed their changes. Now we're in the final days before submission and don't have time to fix it.
 
   "When you open the project, it opens in 5.5.4."
 
@@ -414,11 +435,6 @@ We made this game in Unreal Engine 5.4 because that's the version available on t
 Technical Challenges: Learning about Unreal Engine’s Behavior Trees and AI Perception methods was challenging. Sometimes it took me a long time to fix bugs.
 GitHub and Team Collaboration Issues: Since we were all new to a collaborative project, we ran into a number of serious GitHub issues:
 
-- Git LFS:
-
- There were issues using Git LFS (Large File Storage) to handle large files. We had to pay to fix this.
-Wrong Version Conflicts: When some members pushed changes with the wrong Unreal Engine version, the project completely crashed. We had to revert to the previous version to fix this.
-Team Member Dropouts: Due to these technical issues, some team members dropped out of the project, thinking we couldn't finish it. This affected the morale of the rest of the team.
 
 ### Next Time
 For the next time, I would change the following things:
@@ -475,3 +491,8 @@ Through this project, I learned a lot about Behavior Trees, AI Perception, and B
 - Sword Guard - https://www.mixamo.com/#/?page=1&type=Character
 - Bow Guard -  Medieval Guard - Download Free 3D model by Taylor (@r.taylor) (2016) At: https://sketchfab.com/models/ca548172f0984660bc4213b9404284fa/embed?autostart=1 (Accessed  20/03/2025).
 - NPC Villager- Medieval Civilian 3 - Download Free 3D model by Leonardo Carvalho (@livrosparacriancas) (2020) At: https://sketchfab.com/models/d99ca22f06134e8dab28fdfa75d87f31/embed?autostart=1 (Accessed  20/03/2025).
+- Meteor hit noise: https://freesound.org/people/SuperSouper/sounds/684987/ (Accessed: 26 Feb 2025)
+- Impact circle: https://clipground.com/images/magic-circle-clipart-12.png (Accessed: 22 Feb 2025)
+- Crossbow shot sfx: https://freesound.org/people/Lunevix/sounds/246015/ (Accessed: 25 Feb 2025)
+- Crossbow model by wolkoed: https://sketchfab.com/3d-models/crossbow-29266724221344da8c37367f90959b81#download (Accessed: 12 Feb 2025)
+- Rocks and meteors (Rock Pack Vol 01 by Vampawn): https://www.fab.com/listings/f66023d1-7951-4c62-8ad5-121b4b0df349 (Accessed: 3 March 2025)
