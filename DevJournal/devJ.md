@@ -20,19 +20,19 @@ I became interested in behavior trees, AI perception systems (how the AI ​​r
 
 ## Research 
 ### Methodology  
- For this project, I researched several sources related to game AI. Through these researches, I learnt important principles, techniques, and practical examples of applications. I created the AI ​​system of "Project Ebonkeep" using YouTube tutorials from great game developers such as Gorka Games, Ali Elzoheiry, and Ryan Laley. And also i rearched official Unreal Engine documentation, and information available on Unreal Engine Dev community page.
+ For this project, I researched several sources related to game AI. Through these researches, I learnt important principles, techniques, and practical examples of applications. I created the AI ​​system of "Project Ebonkeep" using YouTube tutorials from great game developers such as Gorka Games, Ali Elzoheiry, and Matt Aspland.And also i rearched official Unreal Engine documentation, and information available on Unreal Engine Dev community page.
 
 Through this research, I was able to:
 - Get a deep understanding of Behavior Trees
-- Develop AI Perception Systems
+- Develop AI Perception Systems and Behaviour tree, Ai Controller
 - Understand the decision-making mechanisms in the game
-- Create different types of AI agents (soldiers, archers, villagers)
+- Create different types of AI agents (Sword Guards, Bow Guards and NPC Villagers)
 
 My research methodology includes the following steps:
-Collect and study free online resources
-Obtain technical information from the Unreal Engine official documentation
-After studying the resources, conduct experiments on various AI concepts
-Improvement of AI systems based on the experiments
+- Collect and study free online resources
+- Obtain technical information from the Unreal Engine official documentation
+- After studying the resources, conduct experiments on various AI concepts
+- Improvement of AI systems based on the experiments
 
 ### Game Sources  
 1. The Witcher 3: Wild Hunt
