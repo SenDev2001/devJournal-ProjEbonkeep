@@ -145,15 +145,15 @@ Figure 02 - This is how we first made our castle gray box
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20Parts.jpg" alt="Castle Parts" width="800" height="350">
 
-Figure 3 - 
+Figure 3 - This is a picture of our game's first scene, showing the player character and castle walls in true scale
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20walls.png" alt="Castle Walls" width="800" height="350">
 
-Figure 4
+Figure 4 - These are designing of our game Walls. 
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/CastleGRey.png" alt="Castle Grey" width="800" height="350">
 
-Figure 5
+Figure 5 - 
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/castle%20inside.png" alt="Castle Inside" width="800" height="350">
 
@@ -311,12 +311,12 @@ If a sound has been heard through Hearing, the stimulus is broken and the locati
 Finally, this is the process of how the Guard detects the player and responds to it. 
 
   - Set state as passive 
-  https://blueprintue.com/blueprint/kg07of0i/
+ <iframe src="https://blueprintue.com/render/kg07of0i/" style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
 This Blueprint function is called "Set State as Passive". It is used to update the state of the Blackboard in the Unreal Engine AI Controller (AIC_Guard) to Passive. Here, a Set Value as Enum node assigns the Passive value of the E_AIState Enum to a Key of an Enum type in the Blackboard. This is a process to make the Guard AI's behavior silent, non-contradictory. This is part of a state machine setup that symbolizes the transitions between states of the AI ​​system.
 
   - Set state as Attacking 
-https://blueprintue.com/blueprint/7fnwaspi/
+<iframe src="https://blueprintue.com/render/7fnwaspi/"  style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
 This Blueprint process is called "Set State as Attacking". This is what sets a Guard AI in an Unreal Engine AI Controller to enter an active attacking state. First, the "Set Value as Object" node assigns the target object launched as "Attack Player" to the Object key specified as "Attack Target Key Name" in the Blackboard. This helps the Guard AI decide who to attack.
 Next, a "Set Value as Enum" node assigns the value **Attacking** from the "E_AIState" enum to the Enum key specified as "State Key Name" in the Blackboard. This updates the Guard AI's internal state to "Attacking".
@@ -324,43 +324,51 @@ This process updates the necessary Blackboard Variables to trigger **a powerful 
 
 
  - Set state as Investigate 
- https://blueprintue.com/blueprint/qe5khhb8/
+ <iframe src="https://blueprintue.com/render/qe5khhb8/" style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
+
+ This Blueprint process helps an Unreal Engine Guard AI enter an "Investigating" state. This is used to allow an AI to enter a suspicious location. First, the Set Value as Enum node assigns the "Investigating" value of the E_AIState enum to the Blackboard key State Key Name. This updates the AI's current state to "Investigating".
+Next, the Set Value as Vector node assigns the location from the "Location" pin to the Blackboard's Point of Interest Key Name Vector Key. This helps the AI ​​identify the location to search.
+Accordingly, this Blueprint process updates the Blackboard Variables necessary to allow the AI ​​to enter a suspicious location and set the AI ​​state to "Investigating" at that time. This helps make the AI ​​Guard more realistic and immersive.
 
  - set movement speed
- https://blueprintue.com/blueprint/k8uh0mvp/ 
+ <iframe src="https://blueprintue.com/render/k8uh0mvp/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
  - sword guard attack
- https://blueprintue.com/blueprint/r5ar0qlb/ 
+<iframe src="https://blueprintue.com/render/r5ar0qlb/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
 - damage and death
-https://blueprintue.com/blueprint/g4a0etc3/ 
+<iframe src="https://blueprintue.com/render/g4a0etc3/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
 - sword guard health bar widget 
-https://blueprintue.com/blueprint/-5h48wdt/ 
+<iframe src="https://blueprintue.com/render/-5h48wdt/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
 - patrol route increment 
-https://blueprintue.com/blueprint/7zk9a1-4/ 
+<iframe src="https://blueprintue.com/render/7zk9a1-4/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
 - get spline point as world position
-https://blueprintue.com/blueprint/ps7tlgw8/ 
+<iframe src="https://blueprintue.com/render/ps7tlgw8/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
 - Sword guard attack and block
-https://blueprintue.com/blueprint/522qaqte/ 
+<iframe src="https://blueprintue.com/render/522qaqte/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
 - Sword guard attack
-https://blueprintue.com/blueprint/pw8_s2p7/ 
+<iframe src="https://blueprintue.com/render/pw8_s2p7/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
 - BP Villager
-https://blueprintue.com/blueprint/80zg2b8y/ 
+<iframe src="https://blueprintue.com/render/80zg2b8y/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe> 
 
 - Bow Guard attack
-https://blueprintue.com/blueprint/y_-77ewl/ 
+<iframe src="https://blueprintue.com/render/y_-77ewl/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
 ### Video Demonstration -
 
-https://youtu.be/B3lbsZjUn3I Sword Guards and NPCs
+-  Sword Guards and NPCs
 
-https://youtu.be/CvXdapR6qXc Bow guards
+<iframe width="560" height="315" src="https://www.youtube.com/embed/B3lbsZjUn3I?si=ae7gDx1FnKxX4aHt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+- Bow guards
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CvXdapR6qXc?si=4roxnlW5ZZGTfjt_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Reflection 
 
@@ -463,11 +471,7 @@ Through this project, I learned a lot about Behavior Trees, AI Perception, and B
 
 
 ## Declared Assets
-- Mixamo -
-Sword Guard - https://www.mixamo.com/#/?page=1&type=Character (PALADIN L NORDSTORM)
 
-Bow Guard - https://sketchfab.com/3d-models/medieval-guard-ca548172f0984660bc4213b9404284fa
-
-- Sketchfab -
- NPC Villager- 
- https://sketchfab.com/3d-models/medieval-civilian-3-d99ca22f06134e8dab28fdfa75d87f31 (CIVILIAN 3)
+- Sword Guard - https://www.mixamo.com/#/?page=1&type=Character
+- Bow Guard -  Medieval Guard - Download Free 3D model by Taylor (@r.taylor) (2016) At: https://sketchfab.com/models/ca548172f0984660bc4213b9404284fa/embed?autostart=1 (Accessed  20/03/2025).
+- NPC Villager- Medieval Civilian 3 - Download Free 3D model by Leonardo Carvalho (@livrosparacriancas) (2020) At: https://sketchfab.com/models/d99ca22f06134e8dab28fdfa75d87f31/embed?autostart=1 (Accessed  20/03/2025).
