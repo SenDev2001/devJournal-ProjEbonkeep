@@ -1,11 +1,11 @@
-# Collobaration Project 
+# Collobaration Project - EBONKEEP
 ### 2412587
 ### Kuranage Senith Madushan Perera
 
 ## Game Artificial Intelligence - FGCT7011
 
 ## Overview
-This is a collaborative team project for the FGCT7011 Game Artificial Intelligence module. Our game is called “Project Ebonkeep”. This game is a boss fight 3D game with a medieval theme powered by game AI and was created using Unreal Engine 5.
+This is a collaborative team project for the FGCT7011 Game Artificial Intelligence module. Our game is called “Ebonkeep”. This game is a boss fight 3D game with a medieval theme powered by game AI and was created using Unreal Engine 5.
 The main objective of the game is for the player to go to a castle and defeat the AI-controlled guards, sword and bow guards there. After defeating them, the player has to search a special potion and increases his health, unlocks the fire arrow power, and faces the final large golem boss enemy.
 The golem boss, sword guards and bow guards all of these are created using behavior trees and blueprints. Additionally, the game also has NPC characters called villagers. We do not use behavior trees for them, but only regular blueprints.
 Our team consists of six people: three artists, two programmers and a designer. Everyone was new to Unreal Engine. So it was important to learn from each other on the project. When one didn’t know, the other helped. By being able to work well in a team environment.
@@ -269,7 +269,7 @@ In Sequence Node:
 - BTT_MovePatrolRoute: Move along Patrol Route
 - Wait (Random 2-5 seconds): Pause 
 
-This behavior tree controls the behavior of Swor guards. Basically, the guard patrols a designated path at normal speed. If a noise is heard, the guard quickly moves to the location and checks. If no one is seen, it reverts back to normal patrol. When the player is seen, the guard switches to combat mode, focuses on him, and quickly approaches and attacks the player.
+This behavior tree controls the behavior of Sword guards. Basically, the guard patrols a designated path at normal speed. If a noise is heard, the guard quickly moves to the location and checks. If no one is seen, it reverts back to normal patrol. When the player is seen, the guard switches to combat mode, focuses on him, and quickly approaches and attacks the player.
 I use the same setup for the bow guards, but I have removed the "Move To player" action. Since the archers are on the gates, they do not need to move to the player. All other actions work the same way, and when they see the player or hear a sound, they shoot at the player.
 
   - #### Guards AI controller 
@@ -314,6 +314,9 @@ https://blueprintue.com/blueprint/7zk9a1-4/ patrol route increment
 
 https://blueprintue.com/blueprint/ps7tlgw8/ get spline point as world position
 
+https://blueprintue.com/blueprint/522qaqte/ Sword guard attack and block
+
+https://blueprintue.com/blueprint/pw8_s2p7/ Sword guard attack
 
 
 https://blueprintue.com/blueprint/80zg2b8y/ BP Villager
