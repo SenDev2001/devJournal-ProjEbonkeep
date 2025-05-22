@@ -5,7 +5,6 @@
 ## Game Artificial Intelligence - FGCT7011
 
 ## Major Links
- - ## "We made this game in Unreal Engine 5.4 because that's the version available on the university computers. However, one of our team members used Unreal Engine 5.5.4 and pushed their changes. Now we're in the final days before submission and don't have time to fix it. When you open the project, it opens in 5.5.4."
 ### GitHub Link -https://github.com/SenDev2001/ProjectEbonkeep
 ### Game Link - 
 
@@ -31,14 +30,16 @@ Through this research, I was able to:
 
 My research methodology includes the following steps:
 Collect and study free online resources
-Obtain technical information from the Unreal Engine wiki and official documentation
+Obtain technical information from the Unreal Engine official documentation
 After studying the resources, conduct experiments on various AI concepts
 Improvement of AI systems based on the experiments
 
 ### Game Sources  
 1. The Witcher 3: Wild Hunt
-The mechanism used for the AI ​​minor enemies (Guards, Bandits) in The Witcher 3 was used as a guide for the swordsmen and archers in our "Project Ebonkeep". In particular, the way enemies explore, detect suspicious activity, and provide early warning of attacks were used. What makes The Witcher 3's AI system unique is its ability to respond to natural routines and the environment. Witcher 3 - The Detailed Life of NPCs (2015) At: https://www.youtube.com/watch?v=9vzzPB6PRsE (Accessed  16/02/2025).
-
+The mechanism used for the AI ​​minor enemies (Guards, Bandits) in The Witcher 3 was used as a guide for the swordsmen and archers in our "Project Ebonkeep". In particular, the way enemies explore, detect suspicious activity, and provide early warning of attacks were used. What makes The Witcher 3's AI system unique is its ability to respond to natural routines and the environment. (Witcher 3 - The Detailed Life of NPCs, 2015)
+<a href="https://www.youtube.com/watch?v=9vzzPB6PRsE" target="_blank">
+  <img src="https://img.youtube.com/vi/9vzzPB6PRsE/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
+</a>
 
    I used the following concepts when developing the Guards AI:
    - Patrol Routes
@@ -46,7 +47,8 @@ The mechanism used for the AI ​​minor enemies (Guards, Bandits) in The Witch
    - Switching of instruments (Normal, Investigation, Attack)
 
 2. Assassin's Creed Series
-The NPC interaction system in the Assassin's Creed series was a very special source for the development of the AI ​​in my game. The way the NPC characters in this game communicate with each other and how they interact with the player was a big inspiration for me. For example, the way the guards converse with each other, exchange information with each other, and converse with the player is a feature I would like to include in the AI ​​system of my game. I am currently working on adding this feature to the game "Project Ebonkeep". Postmortem: AI action planning on Assassin’s Creed Odyssey and Immortals Fenyx Rising (s.d.) At: https://www.gamedeveloper.com/programming/postmortem-ai-action-planning-on-assassins-creed-odyssey-and-immortals-fenyx-rising- (Accessed  16/02/2025).
+The NPC interaction system in the Assassin's Creed series was a very special source for the development of the AI ​​in my game. The way the NPC characters in this game communicate with each other and how they interact with the player was a big inspiration for me. For example, the way the guards converse with each other, exchange information with each other, and converse with the player is a feature I would like to include in the AI ​​system of my game. I am currently working on adding this feature to the game "Project Ebonkeep".(Postmortem: AI action planning on Assassin’s Creed Odyssey and Immortals Fenyx Rising, s.d.)
+
 
    The features that I am implementing from the Assassin's Creed series are:
 
@@ -56,7 +58,7 @@ The NPC interaction system in the Assassin's Creed series was a very special sou
    - Exchange of information between NPCs about suspicious activity
 
 ### Documentation Sources  
-1. Unreal Engine Documentation - Behavior Trees Behavior Trees in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-trees-in-unreal-engine (Accessed  15/02/2025).
+1. Unreal Engine Documentation -(Behavior Trees in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.)
 The official Unreal Engine documentation provides a detailed guide to Behavior Trees. 
 Using this documentation, I learned about the use of Blackboards, Decorator and Service nodes, and Task nodes.
 
@@ -67,22 +69,43 @@ Important concepts I learned from the Unreal Engine documentation:
 - Behavior Tree Services
 - Behavior Tree Tasks
 
-2. Ali Elzoheri’s Advanced AI Enemy tutorials
+2. Ali Elzoheri’s Advanced AI Enemy tutorials.
+
 Ali Elzoheri’s YouTube tutorials discuss creating complex AI behaviors in Unreal Engine. Using these techniques, I created group AI behaviors for guards.
 Important concepts I learned from Ali Elzoheri’s youtube tutorials:
-I've watched a lot of his videos, and I've learned from them how he uses the behavior tree to chase the player when he sees and hears enemy noise, Smart Enemy AI | (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=-t3PbGRazKg (Accessed  16/02/2025).I learned how to create a patrol route using a spline and how enemies follow that route. I also learned how to switch from combat to passive, Smart Enemy AI | (Part 2: Patrolling & States) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=WFV5IewGks8 (Accessed  17/02/2025). I researched and learned how to use AI perception to sense and hearing and how to investigate when enemy hear a noise, how to switch to "investigate" when enemy hear a noise, and how to switch to attack when enemy can see the player. Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=gsyZdKYAT_4 (Accessed  20/01/2025).
- In addition, I also learned about balanced attack strategies, behavior tree decorations, behavior tree tasks.I also watched Archery Enemy ai tutorial to get some bow mechanics and learn arrow physics.Also, I researched how EQS works in Enemy AI, but I didn't use it in our game because I don't think it's necessary for our game. But if it's needed in the future, I'll do it in our game too. Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=gsyZdKYAT_4 (Accessed  20/01/2025).
+I've watched a lot of his videos, and I've learned from them how he uses the behavior tree to chase the player when he sees and hears enemy noise, (Smart Enemy AI | (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5), 2023).
+I learned how to create a patrol route using a spline and how enemies follow that route. I also learned how to switch from combat to passive, (Smart Enemy AI | (Part 2: Patrolling & States) | Tutorial in Unreal Engine 5 (UE5), 2023) I researched and learned how to use AI perception to sense and hearing and how to investigate when enemy hear a noise, how to switch to "investigate" when enemy hear a noise, and how to switch to attack when enemy can see the player. (Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5), 2023)
+
+<a href="https://www.youtube.com/watch?v=-t3PbGRazKg&list=PLNwKK6OwH7eW1n49TW6-FmiZhqRn97cRy&index=1" target="_blank">
+  <img src="https://img.youtube.com/vi/-t3PbGRazKg/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
+</a>
+
+ In addition, I also learned about balanced attack strategies, behavior tree decorations, behavior tree tasks.I also watched Archery Enemy ai tutorial to get some bow mechanics and learn arrow physics.Also, I researched how EQS works in Enemy AI, but I didn't use it in our game because I don't think it's necessary for our game. But if it's needed in the future, I'll do it in our game too. (Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5), 2023).
 
 
 3. Gorka Games YouTube Tutorials
-The "Enemy AI" tutorial series created by Gorka Games was a very important resource that I used. This tutorial series discusses the process of creating a complete AI system in Unreal Engine step by step. How to Make a Simple Behavior Tree in Unreal Engine 5 - Advanced AI (2022) At: https://www.youtube.com/watch?v=QJuaB2V79mU (Accessed  15/02/2025).
-In addition to Gorka's AI reference component, I researched a lot of things from it. I learned from those videos about creating test nodes in the behavior tree, using variables on the blackboard, and implementing combat logic and strategic logic. Unreal Engine 5 RPG Tutorial Series - #21: AI Detection and Chasing (2023) At: https://www.youtube.com/watch?v=ljmOsZVrtok (Accessed  22/02/2025).I also followed his Head look at video to create our game npcs look at player when player close to them. How to Make the NPC’s Head Look At the Player in Unreal Engine 5 (2023) At: https://www.youtube.com/watch?v=8skq8t_Fffk (Accessed  04/03/2025).
+
+The "Enemy AI" tutorial series created by Gorka Games was a very important resource that I used. This tutorial series discusses the process of creating a complete AI system in Unreal Engine step by step.(How to Make a Simple Behavior Tree in Unreal Engine 5 - Advanced AI, 2022).
+In addition to Gorka's AI reference component, I researched a lot of things from it. I learned from those videos about creating test nodes in the behavior tree, using variables on the blackboard, and implementing combat logic and strategic logic. (Unreal Engine 5 RPG Tutorial Series - #21: AI Detection and Chasing, 2023).
+
+<a href="https://www.youtube.com/watch?v=ljmOsZVrtok" target="_blank">
+  <img src="https://img.youtube.com/vi/ljmOsZVrtok/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
+</a>
+
+ I also followed his Head look at video to create our game npcs look at player when player close to them. (How to Make the NPC’s Head Look At the Player in Unreal Engine 5, 2023).
+
+ <a href="https://www.youtube.com/watch?v=8skq8t_Fffk" target="_blank">
+  <img src="https://img.youtube.com/vi/8skq8t_Fffk/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
+</a>
+
 
 
 4. Matt Aspland YouTube Tutorials
-I researched Matt Aspland's AI random roaming tutorial to create our game npc villager random walk and I change it to When npc see the player npc stop. AI Random Roam | Basic Roaming - Unreal Engine 5 Tutorial (2022) At: https://www.youtube.com/watch?v=Mi7r0LqUmOE (Accessed  04/03/2025).
+I researched Matt Aspland's AI random roaming tutorial to create our game npc villager random walk and I change it to When npc see the player npc stop. (AI Random Roam | Basic Roaming - Unreal Engine 5 Tutorial, 2022).
 
-
+<a href="https://www.youtube.com/watch?v=Mi7r0LqUmOE" target="_blank">
+  <img src="https://img.youtube.com/vi/Mi7r0LqUmOE/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
+</a>
 
 
 ## Implementation  
@@ -238,13 +261,12 @@ Able to obtain information or missions from some villagers
 
 ### Technical Difficulties
 
-## Outcomes (Suggested Word Count 300) 
+## Outcomes
 
 ### Source Code/Project Files
   - #### Behavior Tree Development and Preview
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20191048.png" alt="Castle Scene Update" width="750" height="350">
-
 
 
  -  Main Behavior Tree Structure:
@@ -293,7 +315,7 @@ This Blueprint is an Event Graph for an AIC_Guard (AI Controller). This is a beh
 Here, when the Guard is possessed, the behavior tree runs. After that, a state called “Passive” is set. An updated list of actors is obtained through the Perception system through the Sight or Hearing sense. This actors list is iterated through a loop, and the Guard is asked whether the player has been seen (Sight) or heard (Hearing).
 If the player has been seen through Sight, the Handle Sensed Sight function is called.
 If a sound has been heard through Hearing, the stimulus is broken and the location is sent to the Handle Sensed Noise function.
-Finally, this is the process of how the Guard detects the player and responds to it 
+Finally, this is the process of how the Guard detects the player and responds to it. 
 
   - Set state as passive 
   https://blueprintue.com/blueprint/kg07of0i/
@@ -311,26 +333,35 @@ This process updates the necessary Blackboard Variables to trigger **a powerful 
  - Set state as Investigate 
  https://blueprintue.com/blueprint/qe5khhb8/
 
-https://blueprintue.com/blueprint/k8uh0mvp/ set movement speed
+ - set movement speed
+ https://blueprintue.com/blueprint/k8uh0mvp/ 
 
-https://blueprintue.com/blueprint/r5ar0qlb/ sword guard attack
+ - sword guard attack
+ https://blueprintue.com/blueprint/r5ar0qlb/ 
 
-https://blueprintue.com/blueprint/g4a0etc3/ damage and death
+- damage and death
+https://blueprintue.com/blueprint/g4a0etc3/ 
 
-https://blueprintue.com/blueprint/-5h48wdt/ sword guard health bar widget 
+- sword guard health bar widget 
+https://blueprintue.com/blueprint/-5h48wdt/ 
 
-https://blueprintue.com/blueprint/7zk9a1-4/ patrol route increment
+- patrol route increment 
+https://blueprintue.com/blueprint/7zk9a1-4/ 
 
-https://blueprintue.com/blueprint/ps7tlgw8/ get spline point as world position
+- get spline point as world position
+https://blueprintue.com/blueprint/ps7tlgw8/ 
 
-https://blueprintue.com/blueprint/522qaqte/ Sword guard attack and block
+- Sword guard attack and block
+https://blueprintue.com/blueprint/522qaqte/ 
 
-https://blueprintue.com/blueprint/pw8_s2p7/ Sword guard attack
+- Sword guard attack
+https://blueprintue.com/blueprint/pw8_s2p7/ 
 
-https://blueprintue.com/blueprint/80zg2b8y/ BP Villager
+- BP Villager
+https://blueprintue.com/blueprint/80zg2b8y/ 
 
-https://blueprintue.com/blueprint/y_-77ewl/ Bow Guard attack
-
+- Bow Guard attack
+https://blueprintue.com/blueprint/y_-77ewl/ 
 
 ### Video Demonstration -
 
@@ -367,6 +398,11 @@ Creating Behavior Trees: Through this project, I gained a deep understanding of 
 ### Negative Analysis  
 This project also had some shortcomings and challenges:
 
+- Wrong Unreal Version:
+We made this game in Unreal Engine 5.4 because that's the version available on the university computers. However, one of our team members used Unreal Engine 5.5.4 and pushed their changes. Now we're in the final days before submission and don't have time to fix it.
+
+  "When you open the project, it opens in 5.5.4."
+
 - Time Limit:
 
  Since this was my first Unreal Engine project, it was a challenge to do this project while still learning it. Due to time constraints, I was unable to implement my plan to give the player the ability to change weapons (such as swords, bows, etc.).
@@ -386,7 +422,7 @@ Team Member Dropouts: Due to these technical issues, some team members dropped o
 ### Next Time
 For the next time, I would change the following things:
 
--  NPC Communication System: 
+- NPC Communication System: 
 
 Next time, I would like to create a full conversation system where NPC villagers can communicate with each other and with the player.
 Improved Weapon System: Give the player the ability to change different weapons and use different types of attack methods.
