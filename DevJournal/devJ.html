@@ -1,0 +1,846 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>devJ.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+<h1 id="collobaration-project---ebonkeep">Collobaration Project - EBONKEEP</h1>
+<h3 id="2412587">2412587</h3>
+<h3 id="kuranage-senith-madushan-perera">Kuranage Senith Madushan Perera</h3>
+<h2 id="game-artificial-intelligence---fgct7011">Game Artificial Intelligence - FGCT7011</h2>
+<h2 id="major-links">Major Links</h2>
+<h3 id="github-link--httpsgithubcomsendev2001projectebonkeep">GitHub Link -https://github.com/SenDev2001/ProjectEbonkeep</h3>
+<h3 id="game-link">Game Link -</h3>
+<h2 id="overview">Overview</h2>
+<p>This is a collaborative team project for the FGCT7011 Game Artificial Intelligence module. Our game is called “Ebonkeep”. This game is a boss fight 3D game with a medieval theme powered by game AI and was created using Unreal Engine 5.
+The main objective of the game is for the player to go to a castle and defeat the AI-controlled guards, sword and bow guards there. After defeating them, the player has to search a special potion and increases his health, unlocks the fire arrow power, and faces the final large golem boss enemy.
+The golem boss, sword guards and bow guards all of these are created using behavior trees and blueprints. Additionally, the game also has NPC characters called villagers. We do not use behavior trees for them, but only regular blueprints.
+Our team consists of six people: three artists, two programmers and a designer. Everyone was new to Unreal Engine. So it was important to learn from each other on the project. When one didn’t know, the other helped. By being able to work well in a team environment.
+My contribution to this project was to create smart AI Guards using behaviour trees. This included both sword guards and bow guards. Another contribution was to create the villagers NPC characters. Although the villager AI didn’t use behavior trees and i used blueprint and AI perception for them.
+The behavior tree for the boss enemy was created by another programmer. However, I closely studied his work and helped him debug bugs when needed.
+I became interested in behavior trees, AI perception systems (how the AI ​​reacts to its environment), and AI decision-making in Unreal Engine 5 through research based on YouTube tutorials, Unreal Engine documentation, and indie game developers.</p>
+<h2 id="research">Research</h2>
+<h3 id="methodology">Methodology</h3>
+<p>For this project, I researched several sources related to game AI. Through these researches, I learnt important principles, techniques, and practical examples of applications. I created the AI ​​system of &quot;Project Ebonkeep&quot; using YouTube tutorials from great game developers such as Gorka Games, Ali Elzoheiry, and Matt Aspland.And also i rearched official Unreal Engine documentation, and information available on Unreal Engine Dev community page.</p>
+<p>Through this research, I was able to:</p>
+<ul>
+<li>Get a deep understanding of Behavior Trees</li>
+<li>Develop AI Perception Systems and Behaviour tree, Ai Controller</li>
+<li>Understand the decision-making mechanisms in the game</li>
+<li>Create different types of AI agents (Sword Guards, Bow Guards and NPC Villagers)</li>
+</ul>
+<p>My research methodology includes the following steps:</p>
+<ul>
+<li>Collect and study free online resources</li>
+<li>Obtain technical information from the Unreal Engine official documentation</li>
+<li>After studying the resources, conduct experiments on various AI concepts</li>
+<li>Improvement of AI systems based on the experiments</li>
+</ul>
+<h3 id="game-sources">Game Sources</h3>
+<ol>
+<li>
+<p>The Witcher 3: Wild Hunt
+The mechanism used for the AI ​​minor enemies (Guards, Bandits) in The Witcher 3 was used as a guide for the swordsmen and archers in our &quot;Project Ebonkeep&quot;. In particular, the way enemies explore, detect suspicious activity, and provide early warning of attacks were used. What makes The Witcher 3's AI system unique is its ability to respond to natural routines and the environment. (Witcher 3 - The Detailed Life of NPCs, 2015)
+<a href="https://www.youtube.com/watch?v=9vzzPB6PRsE" target="_blank">
+<img src="https://img.youtube.com/vi/9vzzPB6PRsE/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
+</a></p>
+<p>I used the following concepts when developing the Guards AI:</p>
+<ul>
+<li>Patrol Routes</li>
+<li>Suspicious Activity Detection</li>
+<li>Switching of instruments (Normal, Investigation, Attack)</li>
+</ul>
+</li>
+<li>
+<p>Assassin's Creed Series
+The NPC interaction system in the Assassin's Creed series was a very special source for the development of the AI ​​in my game. The way the NPC characters in this game communicate with each other and how they interact with the player was a big inspiration for me. For example, the way the guards converse with each other, exchange information with each other, and converse with the player is a feature I would like to include in the AI ​​system of my game. I am currently working on adding this feature to the game &quot;Project Ebonkeep&quot;.(Postmortem: AI action planning on Assassin’s Creed Odyssey and Immortals Fenyx Rising, s.d.)</p>
+<p>The features that I am implementing from the Assassin's Creed series are:</p>
+<ul>
+<li>Dialogue and interaction system between NPC characters</li>
+<li>Interaction system between NPC characters and the player</li>
+<li>Social behavior patterns and response system</li>
+<li>Exchange of information between NPCs about suspicious activity</li>
+</ul>
+</li>
+</ol>
+<h3 id="documentation-sources">Documentation Sources</h3>
+<ol>
+<li>Unreal Engine Documentation -(Behavior Trees in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community, s.d.)
+The official Unreal Engine documentation provides a detailed guide to Behavior Trees.
+Using this documentation, I learned about the use of Blackboards, Decorator and Service nodes, and Task nodes.</li>
+</ol>
+<p>Important concepts I learned from the Unreal Engine documentation:</p>
+<ul>
+<li>Using the Blackboard system</li>
+<li>AI Perception Component</li>
+<li>Behavior Tree Decorators</li>
+<li>Behavior Tree Services</li>
+<li>Behavior Tree Tasks</li>
+</ul>
+<ol start="2">
+<li>Ali Elzoheri’s Advanced AI Enemy tutorials.</li>
+</ol>
+<p>Ali Elzoheri’s YouTube tutorials discuss creating complex AI behaviors in Unreal Engine. Using these techniques, I created group AI behaviors for guards.
+Important concepts I learned from Ali Elzoheri’s youtube tutorials:
+I've watched a lot of his videos, and I've learned from them how he uses the behavior tree to chase the player when he sees and hears enemy noise, (Smart Enemy AI | (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5), 2023).
+I learned how to create a patrol route using a spline and how enemies follow that route. I also learned how to switch from combat to passive, (Smart Enemy AI | (Part 2: Patrolling &amp; States) | Tutorial in Unreal Engine 5 (UE5), 2023) I researched and learned how to use AI perception to sense and hearing and how to investigate when enemy hear a noise, how to switch to &quot;investigate&quot; when enemy hear a noise, and how to switch to attack when enemy can see the player. (Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5), 2023)</p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-t3PbGRazKg?si=5_4OgNoSzBPAdlPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<!-- <a href="https://www.youtube.com/watch?v=-t3PbGRazKg&list=PLNwKK6OwH7eW1n49TW6-FmiZhqRn97cRy&index=1" target="_blank">
+  <img src="https://img.youtube.com/vi/-t3PbGRazKg/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
+</a> -->
+<p>In addition, I also learned about balanced attack strategies, behavior tree decorations, behavior tree tasks.I also watched Archery Enemy ai tutorial to get some bow mechanics and learn arrow physics.Also, I researched how EQS works in Enemy AI, but I didn't use it in our game because I don't think it's necessary for our game. But if it's needed in the future, I'll do it in our game too. (Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5), 2023).</p>
+<ol start="3">
+<li>Gorka Games YouTube Tutorials</li>
+</ol>
+<p>The &quot;Enemy AI&quot; tutorial series created by Gorka Games was a very important resource that I used. This tutorial series discusses the process of creating a complete AI system in Unreal Engine step by step.(How to Make a Simple Behavior Tree in Unreal Engine 5 - Advanced AI, 2022).
+In addition to Gorka's AI reference component, I researched a lot of things from it. I learned from those videos about creating test nodes in the behavior tree, using variables on the blackboard, and implementing combat logic and strategic logic. (Unreal Engine 5 RPG Tutorial Series - #21: AI Detection and Chasing, 2023).</p>
+<a href="https://www.youtube.com/watch?v=ljmOsZVrtok" target="_blank">
+  <img src="https://img.youtube.com/vi/ljmOsZVrtok/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
+</a>
+<p>I also followed his Head look at video to create our game npcs look at player when player close to them. (How to Make the NPC’s Head Look At the Player in Unreal Engine 5, 2023).</p>
+ <a href="https://www.youtube.com/watch?v=8skq8t_Fffk" target="_blank">
+  <img src="https://img.youtube.com/vi/8skq8t_Fffk/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
+</a>
+<ol start="4">
+<li>Matt Aspland YouTube Tutorials
+I researched Matt Aspland's AI random roaming tutorial to create our game npc villager random walk and I change it to When npc see the player npc stop. (AI Random Roam | Basic Roaming - Unreal Engine 5 Tutorial, 2022).</li>
+</ol>
+<a href="https://www.youtube.com/watch?v=Mi7r0LqUmOE" target="_blank">
+  <img src="https://img.youtube.com/vi/Mi7r0LqUmOE/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
+</a>
+<h2 id="implementation">Implementation</h2>
+<h3 id="process">Process</h3>
+<p>The process of developing collobaration game &quot;Project Ebonkeep&quot; took place in several steps as follows:</p>
+<h4 id="project-initiation-and-planning">Project Initiation and Planning</h4>
+<ul>
+<li>
+<h4 id="initial-inspiration-and-concept">Initial Inspiration and Concept</h4>
+</li>
+</ul>
+<p>When our team first discussed creating a game for the Collabaration project, we decided to take on the challenge of creating a game with outstanding AI, even though we were all new to Unreal Engine . After discussion, we decided to create a boss battle game with a medieval theme and using Unreal Engine 5.4 because in pur university PCs are using this version.</p>
+<ul>
+<li>
+<h4 id="team-members-and-task-distribution">Team Members and Task Distribution</h4>
+</li>
+</ul>
+<p>We had six team members, and their tasks were divided as follows:</p>
+<ul>
+<li>Three artists (3D modeling, animation, and environment design)</li>
+<li>Two programmers (making AI Guards, the boss Enemey and NPC Vilagers)</li>
+<li>One designer (level design and game mechanics)</li>
+</ul>
+<p>My role was to develop the guard AI (swordsmen and archers) and the villagers' behaviors.</p>
+<ul>
+<li>
+<h4 id="castle-planning">Castle Planning</h4>
+</li>
+</ul>
+<p>We first thought about what we wanted the castle to look like. In keeping with the theme of our game, we decided to create a castle that was designed to resemble a large and ancient.
+Accordingly, we initially planned what types of places and people would be in and around the castle.</p>
+<h5 id="inside-the-castle">Inside the castle:</h5>
+<ul>
+<li>
+<p>Swordsmith – to give the player the ability to craft weapons.</p>
+</li>
+<li>
+<p>Bakery – to represent the daily life of the villagers.</p>
+</li>
+<li>
+<p>Shops and Village – as an area where the general public lives.</p>
+</li>
+<li>
+<p>Guards and Villagers – as constant agents that act in AI processes.</p>
+</li>
+<li>
+<p>Training Area – to train the guards and provide combat training for the player.</p>
+</li>
+<li>
+<p>Main Boss Arena – a large area suitable for the final main battle.</p>
+</li>
+</ul>
+<p>Based on all this information, we created these locations in Unreal Engine. We analyzed our designs in detail and tried to create a beautiful and lively castle environment.</p>
+<p>The following pictures show our journey from the beginning of building our castle to today.</p>
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Refer%20image.png" alt="" width="800" height="350">
+<p>Figure 01</p>
+<p>This castle picture is we refer to create our Castle.</p>
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20First%20Step.png" alt="Castle First Step" width="800" height="350">
+<p>Figure 02</p>
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20Parts.jpg" alt="Castle Parts" width="800" height="350">
+<p>Figure 3</p>
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20walls.png" alt="Castle Walls" width="800" height="350">
+<p>Figure 4</p>
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/CastleGRey.png" alt="Castle Grey" width="800" height="350">
+<p>Figure 5</p>
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/castle%20inside.png" alt="Castle Inside" width="800" height="350">
+<p>Figure 6</p>
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/castle%20gates.png" alt="Castle Gates" width="800" height="350">
+<p>figure 7</p>
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20Errors.png" alt="Castle Errors" width="800" height="350">
+<p>figure 8</p>
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20With%20rain.png" alt="Castle With Rain" width="800" height="350">
+<p>Figure 9</p>
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230629.png" alt="Updated Scene" width="800" height="350">
+<p>This is how we Start Our Castle</p>
+<ul>
+<li>
+<h4 id="character-creation-and-design">Character Creation and Design</h4>
+</li>
+</ul>
+<p>Boss Enemy Design
+Creating the final boss, the massive Gold Golem:</p>
+<p>Conceptual Phase - Our artists created concept drawings of a large, fearsome Gold Golem, with lion faces on both shoulders.
+AI Behavior Design - A complex behavior tree for the boss was created by our other programmer, including the following special abilities:</p>
+<ul>
+<li>Fire Breath - Delivers a powerful fire attack</li>
+<li>Ground Smash - Delivers a powerful attack that shakes the ground</li>
+<li>Special Abilities: Increases impulsiveness when injured (Enrage)</li>
+</ul>
+<p>Coordination - I helped my colleague build the boss AI, especially with bug fixes and performance improvements.</p>
+<p>Guard AI Design
+I designed my main role, the Guard AI, as follows:</p>
+<p>Bow Guard Design</p>
+<ul>
+<li>Designed as a typical medieval archer</li>
+<li>Attacks from a distance using a crossbow</li>
+<li>Positioned on high walls and towers</li>
+</ul>
+<p>Sword Guard Design</p>
+<ul>
+<li>Designed as a medieval knight character with a war shield and sword</li>
+<li>Attacks in close combat using a protective shield and a strong sword</li>
+<li>Deployed inside castle areas, they follow a patrol route every time they patrol
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230720.png" alt="Updated Scene" height="350"></li>
+</ul>
+<p>NPC Villagers</p>
+<ul>
+<li>Deployed inside cstle, AI random roaming.
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230706.png" alt="Updated Scene" height="450"></li>
+</ul>
+<p>Player Character</p>
+<ul>
+<li>Designed as a hero character with a large shield and crossbow</li>
+<li>A hero wearing a heavy armor with a balance of strength and protection</li>
+<li>Fire arrows special ability available (after finding a special nutrient liquid)</li>
+</ul>
+<h3 id="new-approaches">New Approaches</h3>
+<h3 id="sword-guards-and-bow-guards-ai-behaviors">Sword Guards and Bow Guards AI Behaviors:</h3>
+<p>When player is seen: Activate Combat State, move towards player.
+When sound is heard: Activate Investigating State, move towards sound.This AI Perception system allows Guards to respond naturally to the player, for example:</p>
+<ul>
+<li>Run towards to Player and Attack as soon as they see it</li>
+<li>When sound is heard, investigate the direction of sound</li>
+<li>If there is no doubt after investigation, return to Passive State</li>
+</ul>
+<h3 id="villager-npc-system">Villager NPC System</h3>
+<p>Apart from Guard AI, I also created Villager NPC characters, they have behavior trees instead of Using Common Blueprints:</p>
+<p>Villager Blueprint Setup:</p>
+<p>Created a Character Blueprint
+Change locations periodically during Event Tick
+Respond to AI Perception</p>
+<p>Villager Behavior:</p>
+<p>Daily Activities: Villagers move between shops, gardens, and other areas during the day
+When seeing the player: Stop, turn towards the player, wave, or talk
+When seeing a battle: Run away in fear, hide</p>
+<p>Player Interaction:</p>
+<p>Display a simple dialogue system when the player talks to the villagers
+Able to obtain information or missions from some villagers</p>
+<h3 id="testing">Testing</h3>
+<h3 id="technical-difficulties">Technical Difficulties</h3>
+<h2 id="outcomes">Outcomes</h2>
+<h3 id="source-codeproject-files">Source Code/Project Files</h3>
+<ul>
+<li>
+<h4 id="behavior-tree-development-and-preview">Behavior Tree Development and Preview</h4>
+</li>
+</ul>
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20191048.png" alt="Castle Scene Update" width="750" height="350">
+<ul>
+<li>Main Behavior Tree Structure:</li>
+</ul>
+<p>I set up a Selector Node to select the three main AI states:</p>
+<ul>
+<li>Combat State</li>
+<li>Investigating State</li>
+<li>Passive State</li>
+</ul>
+<h4 id="combat-state">Combat State:</h4>
+<p>In the Sequence Node:</p>
+<ul>
+<li>BTT_SetMovementSpeed: Set Sprint Speed</li>
+<li>BTT_FocusPlayer: Focus on the player</li>
+<li>Move to Player: &quot;MoveToPlayer&quot; for Swordsmen</li>
+<li>BTT_Attack: Activate Attack</li>
+<li>Wait (2 seconds): Time between attacks</li>
+</ul>
+<h4 id="investigating-state">Investigating State:</h4>
+<p>In Sequence Node:</p>
+<ul>
+<li>BTT_SetMovementSpeed: Set Walking Speed</li>
+<li>BTT_ClearFocus: Clear Focus</li>
+<li>Move to Suspicious Location</li>
+<li>Wait (5 seconds): Inspect Area</li>
+<li>BTT_SetStateAsPassive: Set AI's State to Passive</li>
+</ul>
+<h4 id="passive-state">Passive State:</h4>
+<p>In Sequence Node:</p>
+<ul>
+<li>BTT_SetMovementSpeed: Set Normal Walking Speed</li>
+<li>BTT_MovePatrolRoute: Move along Patrol Route</li>
+<li>Wait (Random 2-5 seconds): Pause</li>
+</ul>
+<p>This behavior tree controls the behavior of Sword guards. Basically, the guard patrols a designated path at normal speed. If a noise is heard, the guard quickly moves to the location and checks. If no one is seen, it reverts back to normal patrol. When the player is seen, the guard switches to combat mode, focuses on him, and quickly approaches and attacks the player.
+I use the same setup for the bow guards, but I have removed the &quot;Move To player&quot; action and &quot;BIsBlocking&quot;. Since the archers are on the gates, they do not need to move to the player they cann not block with crossbow. All other actions work the same way, and when they see the player or hear a noise, they shoot at the player.</p>
+<ul>
+<li>
+<h4 id="guards-ai-controller">Guards AI controller</h4>
+</li>
+<li>Evenet Graph
+https://blueprintue.com/blueprint/y72jyfud/</li>
+</ul>
+<iframe src="https://blueprintue.com/render/y72jyfud/" style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
+<p>This Blueprint is an Event Graph for an AIC_Guard (AI Controller). This is a behavior tree attached to an AI Guard, which is configured to detect the player through the AI ​​Perception system and respond accordingly.
+Here, when the Guard is possessed, the behavior tree runs. After that, a state called “Passive” is set. An updated list of actors is obtained through the Perception system through the Sight or Hearing sense. This actors list is iterated through a loop, and the Guard is asked whether the player has been seen (Sight) or heard (Hearing).
+If the player has been seen through Sight, the Handle Sensed Sight function is called.
+If a sound has been heard through Hearing, the stimulus is broken and the location is sent to the Handle Sensed Noise function.
+Finally, this is the process of how the Guard detects the player and responds to it.</p>
+<ul>
+<li>Set state as passive
+https://blueprintue.com/blueprint/kg07of0i/</li>
+</ul>
+<p>This Blueprint function is called &quot;Set State as Passive&quot;. It is used to update the state of the Blackboard in the Unreal Engine AI Controller (AIC_Guard) to Passive. Here, a Set Value as Enum node assigns the Passive value of the E_AIState Enum to a Key of an Enum type in the Blackboard. This is a process to make the Guard AI's behavior silent, non-contradictory. This is part of a state machine setup that symbolizes the transitions between states of the AI ​​system.</p>
+<ul>
+<li>Set state as Attacking
+https://blueprintue.com/blueprint/7fnwaspi/</li>
+</ul>
+<p>This Blueprint process is called &quot;Set State as Attacking&quot;. This is what sets a Guard AI in an Unreal Engine AI Controller to enter an active attacking state. First, the &quot;Set Value as Object&quot; node assigns the target object launched as &quot;Attack Player&quot; to the Object key specified as &quot;Attack Target Key Name&quot; in the Blackboard. This helps the Guard AI decide who to attack.
+Next, a &quot;Set Value as Enum&quot; node assigns the value <strong>Attacking</strong> from the &quot;E_AIState&quot; enum to the Enum key specified as &quot;State Key Name&quot; in the Blackboard. This updates the Guard AI's internal state to &quot;Attacking&quot;.
+This process updates the necessary Blackboard Variables to trigger <strong>a powerful and aggressive attacking behavior</strong> in the Guard AI. This strengthens the functionality of the AI ​​Behavior Tree and helps the AI ​​behave in a way that is authentic and realistic.</p>
+<ul>
+<li>
+<p>Set state as Investigate
+https://blueprintue.com/blueprint/qe5khhb8/</p>
+</li>
+<li>
+<p>set movement speed
+https://blueprintue.com/blueprint/k8uh0mvp/</p>
+</li>
+<li>
+<p>sword guard attack
+https://blueprintue.com/blueprint/r5ar0qlb/</p>
+</li>
+<li>
+<p>damage and death
+https://blueprintue.com/blueprint/g4a0etc3/</p>
+</li>
+<li>
+<p>sword guard health bar widget
+https://blueprintue.com/blueprint/-5h48wdt/</p>
+</li>
+<li>
+<p>patrol route increment
+https://blueprintue.com/blueprint/7zk9a1-4/</p>
+</li>
+<li>
+<p>get spline point as world position
+https://blueprintue.com/blueprint/ps7tlgw8/</p>
+</li>
+<li>
+<p>Sword guard attack and block
+https://blueprintue.com/blueprint/522qaqte/</p>
+</li>
+<li>
+<p>Sword guard attack
+https://blueprintue.com/blueprint/pw8_s2p7/</p>
+</li>
+<li>
+<p>BP Villager
+https://blueprintue.com/blueprint/80zg2b8y/</p>
+</li>
+<li>
+<p>Bow Guard attack
+https://blueprintue.com/blueprint/y_-77ewl/</p>
+</li>
+</ul>
+<h3 id="video-demonstration">Video Demonstration -</h3>
+<p>https://youtu.be/B3lbsZjUn3I Sword Guards and NPCs</p>
+<p>https://youtu.be/CvXdapR6qXc Bow guards</p>
+<h2 id="reflection">Reflection</h2>
+<h3 id="research-effectiveness">Research Effectiveness</h3>
+<p>The research I did for this project was extremely valuable and useful. In particular, I learned new things about Behavior Trees and AI Perception methods in Unreal Engine. The guidance of instructors like Gorka Games and Ali Elzoheri on YouTube helped me gain a deeper understanding. Through this research, I understood how AI Agents work in different ways.
+This research had a very positive impact on my project. In particular, I was able to create AI systems for swords guards, archers(Bow guards), and NPC villagers. However, if I had more time, I would have liked to do more research on EQS (Environment Query System) and NPC relationship systems.</p>
+<h3 id="positive-analysis">Positive Analysis</h3>
+<p>There are a number of successful aspects of this project that I can be very happy about:</p>
+<ul>
+<li>Archer and Swordsman AI Systems:</li>
+</ul>
+<p>Although I originally planned to create only swordsmen, I was eventually able to include archers as well. I successfully implemented the crossbow function for the bow attack mechanic. I created this process to shoot the crossbow arrow towards the player's location. Although this was a very complex process, it was successfully completed.</p>
+<ul>
+<li>AI Perception System:</li>
+</ul>
+<p>I developed an AI Perception system so that the troops could react accordingly when they saw the player and heard sounds. In particular, I created this system so that when the troops heard a sound, they could check the location and investigate the sound. This was one of my favorite processes.</p>
+<ul>
+<li>NPC Villagers:</li>
+</ul>
+<p>Although it was my first time working on a project using Unreal Engine, I was able to create simple NPC villagers. I created how they go about their daily lives by visiting different places in the village.
+Creating Behavior Trees: Through this project, I gained a deep understanding of creating Behavior Trees. In particular, I learned about the use of Task, Sequence, Selector, Decorator, and Service nodes.</p>
+<ul>
+<li>Team Collaboration:</li>
+</ul>
+<p>Despite all the challenges, it was a great achievement to be able to work together with the rest of the team and successfully complete the project. Especially, even though Unreal Engine was new to all of us, in the end we created a successful game.</p>
+<h3 id="negative-analysis">Negative Analysis</h3>
+<p>This project also had some shortcomings and challenges:</p>
+<ul>
+<li>
+<p>Wrong Unreal Version:
+We made this game in Unreal Engine 5.4 because that's the version available on the university computers. However, one of our team members used Unreal Engine 5.5.4 and pushed their changes. Now we're in the final days before submission and don't have time to fix it.</p>
+<p>&quot;When you open the project, it opens in 5.5.4.&quot;</p>
+</li>
+<li>
+<p>Time Limit:</p>
+</li>
+</ul>
+<p>Since this was my first Unreal Engine project, it was a challenge to do this project while still learning it. Due to time constraints, I was unable to implement my plan to give the player the ability to change weapons (such as swords, bows, etc.).</p>
+<ul>
+<li>NPC Communication:</li>
+</ul>
+<p>My original plan was to create a system that would allow NPC villagers to communicate with each other and with the player. However, this was not feasible due to time and experience constraints.
+Technical Challenges: Learning about Unreal Engine’s Behavior Trees and AI Perception methods was challenging. Sometimes it took me a long time to fix bugs.
+GitHub and Team Collaboration Issues: Since we were all new to a collaborative project, we ran into a number of serious GitHub issues:</p>
+<ul>
+<li>Git LFS:</li>
+</ul>
+<p>There were issues using Git LFS (Large File Storage) to handle large files. We had to pay to fix this.
+Wrong Version Conflicts: When some members pushed changes with the wrong Unreal Engine version, the project completely crashed. We had to revert to the previous version to fix this.
+Team Member Dropouts: Due to these technical issues, some team members dropped out of the project, thinking we couldn't finish it. This affected the morale of the rest of the team.</p>
+<h3 id="next-time">Next Time</h3>
+<p>For the next time, I would change the following things:</p>
+<ul>
+<li>NPC Communication System:</li>
+</ul>
+<p>Next time, I would like to create a full conversation system where NPC villagers can communicate with each other and with the player.
+Improved Weapon System: Give the player the ability to change different weapons and use different types of attack methods.</p>
+<ul>
+<li>More Complex Behavior Trees:</li>
+</ul>
+<p>I would like to create more complex AI systems using EQS (Environment Query System). This will help the troops make more intelligent decisions.
+Advance Planning and Training: Next time, I would like to gain more understanding of Unreal Engine before starting the project. This will allow me to work more efficiently.</p>
+<ul>
+<li>Better Team Collaboration:</li>
+</ul>
+<p>In the next project, I will try to establish a proper Git methodology from the beginning of the project:</p>
+<p>Conduct a training session on Git and Git LFS for all team members.
+Adopt the correct Unreal Engine version and common settings among all members.
+Establish clear rules for adding, modifying, and removing files.
+Maintain better communication between team members.</p>
+<p>Through this project, I learned a lot about Behavior Trees, AI Perception, and Blueprint Programming in Unreal Engine. Not only that, I also gained valuable experience in the challenges that can arise when working on a collaborative project and how to overcome them. This was a valuable experience for my future projects.</p>
+<h2 id="bibliography">Bibliography</h2>
+<ul>
+<li>
+<p>Witcher 3 - The Detailed Life of NPCs (2015) At: https://www.youtube.com/watch?v=9vzzPB6PRsE (Accessed 16/02/2025).</p>
+</li>
+<li>
+<p>Postmortem: AI action planning on Assassin’s Creed Odyssey and Immortals Fenyx Rising (s.d.) At: https://www.gamedeveloper.com/programming/postmortem-ai-action-planning-on-assassins-creed-odyssey-and-immortals-fenyx-rising- (Accessed  16/02/2025).</p>
+</li>
+<li>
+<p>Behavior Trees in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-trees-in-unreal-engine (Accessed  13/05/2025).</p>
+</li>
+<li>
+<p>Smart Enemy AI | (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=-t3PbGRazKg (Accessed  16/02/2025).</p>
+</li>
+<li>
+<p>Smart Enemy AI | (Part 2: Patrolling &amp; States) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=WFV5IewGks8 (Accessed  17/02/2025).</p>
+</li>
+<li>
+<p>Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=gsyZdKYAT_4 (Accessed  20/01/2025).</p>
+</li>
+<li>
+<p>Smart Enemy AI |  (Part 4:  EQS) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=Oy_LojjRiWo (Accessed  14/05/2025).</p>
+</li>
+<li>
+<p>How to Make a Simple Behavior Tree in Unreal Engine 5 - Advanced AI (2022) At: https://www.youtube.com/watch?v=QJuaB2V79mU (Accessed  15/02/2025).</p>
+</li>
+<li>
+<p>Unreal Engine 5 RPG Tutorial Series - #21: AI Detection and Chasing (2023) At: https://www.youtube.com/watch?v=ljmOsZVrtok (Accessed  22/02/2025).</p>
+</li>
+<li>
+<p>How to Make the NPC’s Head Look At the Player in Unreal Engine 5 (2023) At: https://www.youtube.com/watch?v=8skq8t_Fffk (Accessed  04/03/2025).</p>
+</li>
+<li>
+<p>AI Random Roam | Basic Roaming - Unreal Engine 5 Tutorial (2022) At: https://www.youtube.com/watch?v=Mi7r0LqUmOE (Accessed  04/03/2025).</p>
+</li>
+</ul>
+<h2 id="declared-assets">Declared Assets</h2>
+<ul>
+<li>Mixamo -
+Sword Guard - https://www.mixamo.com/#/?page=1&amp;type=Character (PALADIN L NORDSTORM)</li>
+</ul>
+<p>Bow Guard - https://sketchfab.com/3d-models/medieval-guard-ca548172f0984660bc4213b9404284fa</p>
+<ul>
+<li>Sketchfab -
+NPC Villager-
+https://sketchfab.com/3d-models/medieval-civilian-3-d99ca22f06134e8dab28fdfa75d87f31 (CIVILIAN 3)</li>
+</ul>
+
+</body>
+</html>

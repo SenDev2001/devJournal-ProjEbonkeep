@@ -20,7 +20,7 @@ I became interested in behavior trees, AI perception systems (how the AI ​​r
 
 ## Research 
 ### Methodology  
- For this project, I researched several sources related to game AI. Through these researches, I learnt important principles, techniques, and practical examples of applications. I created the AI ​​system of "Project Ebonkeep" using YouTube tutorials from great game developers such as Gorka Games, Ali Elzoheiry, and Matt Aspland.And also i rearched official Unreal Engine documentation, and information available on Unreal Engine Dev community page.
+ For this project, I researched several sources related to game AI. Through these researches, I learnt important principles, techniques, and practical examples of applications. I created the AI ​​system of "Project Ebonkeep" using YouTube tutorials from great game developers such as Gorka Games, Ali Elzoheiry, and Matt Aspland.And also i researched official Unreal Engine documentation, and information available on Unreal Engine Dev community page.
 
 Through this research, I was able to:
 - Get a deep understanding of Behavior Trees
@@ -37,9 +37,8 @@ My research methodology includes the following steps:
 ### Game Sources  
 1. The Witcher 3: Wild Hunt
 The mechanism used for the AI ​​minor enemies (Guards, Bandits) in The Witcher 3 was used as a guide for the swordsmen and archers in our "Project Ebonkeep". In particular, the way enemies explore, detect suspicious activity, and provide early warning of attacks were used. What makes The Witcher 3's AI system unique is its ability to respond to natural routines and the environment. (Witcher 3 - The Detailed Life of NPCs, 2015)
-<a href="https://www.youtube.com/watch?v=9vzzPB6PRsE" target="_blank">
-  <img src="https://img.youtube.com/vi/9vzzPB6PRsE/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
-</a>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/9vzzPB6PRsE?si=spxLxoh6M9a7pli8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
    I used the following concepts when developing the Guards AI:
    - Patrol Routes
@@ -76,9 +75,8 @@ Important concepts I learned from Ali Elzoheri’s youtube tutorials:
 I've watched a lot of his videos, and I've learned from them how he uses the behavior tree to chase the player when he sees and hears enemy noise, (Smart Enemy AI | (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5), 2023).
 I learned how to create a patrol route using a spline and how enemies follow that route. I also learned how to switch from combat to passive, (Smart Enemy AI | (Part 2: Patrolling & States) | Tutorial in Unreal Engine 5 (UE5), 2023) I researched and learned how to use AI perception to sense and hearing and how to investigate when enemy hear a noise, how to switch to "investigate" when enemy hear a noise, and how to switch to attack when enemy can see the player. (Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5), 2023)
 
-<a href="https://www.youtube.com/watch?v=-t3PbGRazKg&list=PLNwKK6OwH7eW1n49TW6-FmiZhqRn97cRy&index=1" target="_blank">
-  <img src="https://img.youtube.com/vi/-t3PbGRazKg/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
-</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/-t3PbGRazKg?si=5_4OgNoSzBPAdlPY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
 
  In addition, I also learned about balanced attack strategies, behavior tree decorations, behavior tree tasks.I also watched Archery Enemy ai tutorial to get some bow mechanics and learn arrow physics.Also, I researched how EQS works in Enemy AI, but I didn't use it in our game because I don't think it's necessary for our game. But if it's needed in the future, I'll do it in our game too. (Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5), 2023).
 
@@ -88,37 +86,30 @@ I learned how to create a patrol route using a spline and how enemies follow tha
 The "Enemy AI" tutorial series created by Gorka Games was a very important resource that I used. This tutorial series discusses the process of creating a complete AI system in Unreal Engine step by step.(How to Make a Simple Behavior Tree in Unreal Engine 5 - Advanced AI, 2022).
 In addition to Gorka's AI reference component, I researched a lot of things from it. I learned from those videos about creating test nodes in the behavior tree, using variables on the blackboard, and implementing combat logic and strategic logic. (Unreal Engine 5 RPG Tutorial Series - #21: AI Detection and Chasing, 2023).
 
-<a href="https://www.youtube.com/watch?v=ljmOsZVrtok" target="_blank">
-  <img src="https://img.youtube.com/vi/ljmOsZVrtok/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
-</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ljmOsZVrtok?si=QU1BSczkhrHHOZ_y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
  I also followed his Head look at video to create our game npcs look at player when player close to them. (How to Make the NPC’s Head Look At the Player in Unreal Engine 5, 2023).
 
- <a href="https://www.youtube.com/watch?v=8skq8t_Fffk" target="_blank">
-  <img src="https://img.youtube.com/vi/8skq8t_Fffk/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
-</a>
-
+ <iframe width="560" height="315" src="https://www.youtube.com/embed/8skq8t_Fffk?si=FLv3GJDvs8QY1x-w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 4. Matt Aspland YouTube Tutorials
 I researched Matt Aspland's AI random roaming tutorial to create our game npc villager random walk and I change it to When npc see the player npc stop. (AI Random Roam | Basic Roaming - Unreal Engine 5 Tutorial, 2022).
 
-<a href="https://www.youtube.com/watch?v=Mi7r0LqUmOE" target="_blank">
-  <img src="https://img.youtube.com/vi/Mi7r0LqUmOE/0.jpg" alt="Watch Video" style="width:100%; max-width:480px;">
-</a>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Mi7r0LqUmOE?si=ivO0B6tONcINdJJg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 ## Implementation  
 
 ### Process
-The process of developing collobaration game "Project Ebonkeep" took place in several steps as follows:
+The process of developing collaboration game "Project Ebonkeep" took place in several steps as follows:
 #### Project Initiation and Planning
  - #### Initial Inspiration and Concept
-When our team first discussed creating a game for the Collabaration project, we decided to take on the challenge of creating a game with outstanding AI, even though we were all new to Unreal Engine . After discussion, we decided to create a boss battle game with a medieval theme and using Unreal Engine 5.4 because in pur university PCs are using this version.
+When our team first discussed creating a game for the Collaboration project, we decided to take on the challenge of creating a game with outstanding AI, even though we were all new to Unreal Engine . After discussion, we decided to create a boss battle game with a medieval theme and using Unreal Engine 5.4 because in pur university PCs are using this version.
  - #### Team Members and Task Distribution
 We had six team members, and their tasks were divided as follows:
   - Three artists (3D modeling, animation, and environment design)
-  - Two programmers (making AI Guards, the boss Enemey and NPC Vilagers)
+  - Two programmers (making AI Guards, The Boss guards and NPC Villagers)
   - One designer (level design and game mechanics)
 
 My role was to develop the guard AI (swordsmen and archers) and the villagers' behaviors.
@@ -310,6 +301,9 @@ I use the same setup for the bow guards, but I have removed the "Move To player"
   - #### Guards AI controller 
    - Evenet Graph
 https://blueprintue.com/blueprint/y72jyfud/ 
+
+<iframe src="https://blueprintue.com/render/y72jyfud/" style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
+
 
 This Blueprint is an Event Graph for an AIC_Guard (AI Controller). This is a behavior tree attached to an AI Guard, which is configured to detect the player through the AI ​​Perception system and respond accordingly.
 Here, when the Guard is possessed, the behavior tree runs. After that, a state called “Passive” is set. An updated list of actors is obtained through the Perception system through the Sight or Hearing sense. This actors list is iterated through a loop, and the Guard is asked whether the player has been seen (Sight) or heard (Hearing).
