@@ -4,6 +4,12 @@
 
 ## Game Artificial Intelligence - FGCT7011
 
+## Major Links
+ - ## "We made this game in Unreal Engine 5.4 because that's the version available on the university computers. However, one of our team members used Unreal Engine 5.5.4 and pushed their changes. Now we're in the final days before submission and don't have time to fix it. When you open the project, it opens in 5.5.4."
+### GitHub Link -https://github.com/SenDev2001/ProjectEbonkeep
+### Game Link - 
+
+
 ## Overview
 This is a collaborative team project for the FGCT7011 Game Artificial Intelligence module. Our game is called “Ebonkeep”. This game is a boss fight 3D game with a medieval theme powered by game AI and was created using Unreal Engine 5.
 The main objective of the game is for the player to go to a castle and defeat the AI-controlled guards, sword and bow guards there. After defeating them, the player has to search a special potion and increases his health, unlocks the fire arrow power, and faces the final large golem boss enemy.
@@ -31,56 +37,53 @@ Improvement of AI systems based on the experiments
 
 ### Game Sources  
 1. The Witcher 3: Wild Hunt
-The mechanism used for the AI ​​minor enemies (Guards, Bandits) in The Witcher 3 was used as a guide for the swordsmen and archers in our "Project Ebonkeep". In particular, the way enemies explore, detect suspicious activity, and provide early warning of attacks were used. What makes The Witcher 3's AI system unique is its ability to respond to natural routines and the environment.Witcher 3 - The Detailed Life of NPCs (2015) At: https://www.youtube.com/watch?v=9vzzPB6PRsE (Accessed  17/05/2025).
+The mechanism used for the AI ​​minor enemies (Guards, Bandits) in The Witcher 3 was used as a guide for the swordsmen and archers in our "Project Ebonkeep". In particular, the way enemies explore, detect suspicious activity, and provide early warning of attacks were used. What makes The Witcher 3's AI system unique is its ability to respond to natural routines and the environment. Witcher 3 - The Detailed Life of NPCs (2015) At: https://www.youtube.com/watch?v=9vzzPB6PRsE (Accessed  16/02/2025).
 
 
-I used the following concepts when developing the Guards AI:
-- Patrol Routes
-- Suspicious Activity Detection
-- Switching of instruments (Normal, Investigation, Attack)
+   I used the following concepts when developing the Guards AI:
+   - Patrol Routes
+   - Suspicious Activity Detection
+   - Switching of instruments (Normal, Investigation, Attack)
 
 2. Assassin's Creed Series
-The NPC interaction system in the Assassin's Creed series was a very special source for the development of the AI ​​in my game. The way the NPC characters in this game communicate with each other and how they interact with the player was a big inspiration for me. For example, the way the guards converse with each other, exchange information with each other, and converse with the player is a feature I would like to include in the AI ​​system of my game. I am currently working on adding this feature to the game "Project Ebonkeep".Postmortem: AI action planning on Assassin’s Creed Odyssey and Immortals Fenyx Rising (s.d.) At: https://www.gamedeveloper.com/programming/postmortem-ai-action-planning-on-assassins-creed-odyssey-and-immortals-fenyx-rising- (Accessed  17/05/2025).
+The NPC interaction system in the Assassin's Creed series was a very special source for the development of the AI ​​in my game. The way the NPC characters in this game communicate with each other and how they interact with the player was a big inspiration for me. For example, the way the guards converse with each other, exchange information with each other, and converse with the player is a feature I would like to include in the AI ​​system of my game. I am currently working on adding this feature to the game "Project Ebonkeep". Postmortem: AI action planning on Assassin’s Creed Odyssey and Immortals Fenyx Rising (s.d.) At: https://www.gamedeveloper.com/programming/postmortem-ai-action-planning-on-assassins-creed-odyssey-and-immortals-fenyx-rising- (Accessed  16/02/2025).
 
+   The features that I am implementing from the Assassin's Creed series are:
 
-The features that I am implementing from the Assassin's Creed series are:
-
-- Dialogue and interaction system between NPC characters
-- Interaction system between NPC characters and the player
-- Social behavior patterns and response system
-- Exchange of information between NPCs about suspicious activity
+   - Dialogue and interaction system between NPC characters
+   - Interaction system between NPC characters and the player
+   - Social behavior patterns and response system
+   - Exchange of information between NPCs about suspicious activity
 
 ### Documentation Sources  
-1. Unreal Engine Documentation - Behavior Trees Behavior Trees in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-trees-in-unreal-engine (Accessed  13/05/2025).
+1. Unreal Engine Documentation - Behavior Trees Behavior Trees in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-trees-in-unreal-engine (Accessed  15/02/2025).
+The official Unreal Engine documentation provides a detailed guide to Behavior Trees. 
+Using this documentation, I learned about the use of Blackboards, Decorator and Service nodes, and Task nodes.
 
-The official Unreal Engine documentation provides a detailed guide to Behavior Trees. Using this documentation, I learned about the use of Blackboards, Decorator and Service nodes, and Task nodes.
 Important concepts I learned from the Unreal Engine documentation:
-
-Using the Blackboard system
-AI Perception Component
-Behavior Tree Decorators
-Behavior Tree Services
-Behavior Tree Tasks
+- Using the Blackboard system
+- AI Perception Component
+- Behavior Tree Decorators
+- Behavior Tree Services
+- Behavior Tree Tasks
 
 2. Ali Elzoheri’s Advanced AI Enemy tutorials
 Ali Elzoheri’s YouTube tutorials discuss creating complex AI behaviors in Unreal Engine. Using these techniques, I created group AI behaviors for guards.
 Important concepts I learned from Ali Elzoheri’s youtube tutorials:
-I've watched a lot of his videos, and I've learned from them how he uses the behavior tree to chase the player when he sees and hears enemy sounds,Smart Enemy AI | (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=-t3PbGRazKg (Accessed  14/05/2025).I learned how to create a patrol route using a spline and how enemies follow that route. I also learned how to switch from combat to passive,Smart Enemy AI | (Part 2: Patrolling & States) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=WFV5IewGks8 (Accessed  14/05/2025). I researched and learned how to use AI perception to sense and hearing and how to investigate when enemy hear a noise, how to switch to "investigate" when enemy hear a noise, and how to switch to attack when enemy can see the player.Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=gsyZdKYAT_4 (Accessed  14/05/2025).
- In addition, I also learned about balanced attack strategies, behavior tree decorations, behavior tree tasks.I also watched Archery Enemy ai tutorial to get some bow mechanics and learn arrow physics.Also, I researched how EQS works in Enemy AI, but I didn't use it in our game because I don't think it's necessary for our game. But if it's needed in the future, I'll do it in our game too.Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=gsyZdKYAT_4 (Accessed  14/05/2025).
+I've watched a lot of his videos, and I've learned from them how he uses the behavior tree to chase the player when he sees and hears enemy noise, Smart Enemy AI | (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=-t3PbGRazKg (Accessed  16/02/2025).I learned how to create a patrol route using a spline and how enemies follow that route. I also learned how to switch from combat to passive, Smart Enemy AI | (Part 2: Patrolling & States) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=WFV5IewGks8 (Accessed  17/02/2025). I researched and learned how to use AI perception to sense and hearing and how to investigate when enemy hear a noise, how to switch to "investigate" when enemy hear a noise, and how to switch to attack when enemy can see the player. Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=gsyZdKYAT_4 (Accessed  20/01/2025).
+ In addition, I also learned about balanced attack strategies, behavior tree decorations, behavior tree tasks.I also watched Archery Enemy ai tutorial to get some bow mechanics and learn arrow physics.Also, I researched how EQS works in Enemy AI, but I didn't use it in our game because I don't think it's necessary for our game. But if it's needed in the future, I'll do it in our game too. Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=gsyZdKYAT_4 (Accessed  20/01/2025).
 
 
 3. Gorka Games YouTube Tutorials
-The "Enemy AI" tutorial series created by Gorka Games was a very important resource that I used. This tutorial series discusses the process of creating a complete AI system in Unreal Engine step by step.
-In addition to Gorka's AI reference component, I researched a lot of things from it. I learned from those videos about creating test nodes in the behavior tree, using variables on the blackboard, and implementing combat logic and strategic logic.
+The "Enemy AI" tutorial series created by Gorka Games was a very important resource that I used. This tutorial series discusses the process of creating a complete AI system in Unreal Engine step by step. How to Make a Simple Behavior Tree in Unreal Engine 5 - Advanced AI (2022) At: https://www.youtube.com/watch?v=QJuaB2V79mU (Accessed  15/02/2025).
+In addition to Gorka's AI reference component, I researched a lot of things from it. I learned from those videos about creating test nodes in the behavior tree, using variables on the blackboard, and implementing combat logic and strategic logic. Unreal Engine 5 RPG Tutorial Series - #21: AI Detection and Chasing (2023) At: https://www.youtube.com/watch?v=ljmOsZVrtok (Accessed  22/02/2025).I also followed his Head look at video to create our game npcs look at player when player close to them. How to Make the NPC’s Head Look At the Player in Unreal Engine 5 (2023) At: https://www.youtube.com/watch?v=8skq8t_Fffk (Accessed  04/03/2025).
 
-4. Ryan Lely's AI Combat Systems
-Ryan Lely's set of techniques focuses on combat systems in game AI. Using this set of techniques, I developed combat actions in defensive AI.
-Important concepts that I learned from Ryan Lely's guides:
 
-Combat transitions
-Dynamic attack patterns
-Responding to player actions
-Attack sensitive zones
+4. Matt Aspland YouTube Tutorials
+I researched Matt Aspland's AI random roaming tutorial to create our game npc villager random walk and I change it to When npc see the player npc stop. AI Random Roam | Basic Roaming - Unreal Engine 5 Tutorial (2022) At: https://www.youtube.com/watch?v=Mi7r0LqUmOE (Accessed  04/03/2025).
+
+
+
 
 ## Implementation  
 
@@ -123,7 +126,7 @@ The following pictures show our journey from the beginning of building our castl
 
 Figure 01
 
-This castle picture is we refer to create our Castle 
+This castle picture is we refer to create our Castle.
 
 
  
@@ -160,6 +163,9 @@ figure 8
 
 Figure 9
 
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230629.png" alt="Updated Scene" width="800" height="350">
+
+
  This is how we Start Our Castle 
 
  - #### Character Creation and Design
@@ -185,7 +191,13 @@ Bow Guard Design
 Sword Guard Design
 - Designed as a medieval knight character with a war shield and sword
 - Attacks in close combat using a protective shield and a strong sword
-- Deployed to guard gates and sensitive areas
+- Deployed inside castle areas, they follow a patrol route every time they patrol
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230720.png" alt="Updated Scene" height="350">
+
+NPC Villagers
+- Deployed inside cstle, AI random roaming.
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230706.png" alt="Updated Scene" height="450">
+
 
 Player Character
 - Designed as a hero character with a large shield and crossbow
@@ -231,7 +243,8 @@ Able to obtain information or missions from some villagers
 ### Source Code/Project Files
   - #### Behavior Tree Development and Preview
 
-<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-09%20140318.png" alt="Castle Updated Stage" width="800">
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20191048.png" alt="Castle Scene Update" width="750" height="350">
+
 
 
  -  Main Behavior Tree Structure:
@@ -270,7 +283,7 @@ In Sequence Node:
 - Wait (Random 2-5 seconds): Pause 
 
 This behavior tree controls the behavior of Sword guards. Basically, the guard patrols a designated path at normal speed. If a noise is heard, the guard quickly moves to the location and checks. If no one is seen, it reverts back to normal patrol. When the player is seen, the guard switches to combat mode, focuses on him, and quickly approaches and attacks the player.
-I use the same setup for the bow guards, but I have removed the "Move To player" action. Since the archers are on the gates, they do not need to move to the player. All other actions work the same way, and when they see the player or hear a sound, they shoot at the player.
+I use the same setup for the bow guards, but I have removed the "Move To player" action and "BIsBlocking". Since the archers are on the gates, they do not need to move to the player they cann not block with crossbow. All other actions work the same way, and when they see the player or hear a noise, they shoot at the player.
 
   - #### Guards AI controller 
    - Evenet Graph
@@ -298,10 +311,6 @@ This process updates the necessary Blackboard Variables to trigger **a powerful 
  - Set state as Investigate 
  https://blueprintue.com/blueprint/qe5khhb8/
 
-
-
-
-
 https://blueprintue.com/blueprint/k8uh0mvp/ set movement speed
 
 https://blueprintue.com/blueprint/r5ar0qlb/ sword guard attack
@@ -318,18 +327,9 @@ https://blueprintue.com/blueprint/522qaqte/ Sword guard attack and block
 
 https://blueprintue.com/blueprint/pw8_s2p7/ Sword guard attack
 
-
 https://blueprintue.com/blueprint/80zg2b8y/ BP Villager
 
 https://blueprintue.com/blueprint/y_-77ewl/ Bow Guard attack
-
-
-
-
-### Build Links
- - ## "We made this game in Unreal Engine 5.4 because that's the version available on the university computers. However, one of our team members used Unreal Engine 5.5.4 and pushed their changes. Now we're in the final days before submission and don't have time to fix it. When you open the project, it opens in 5.5.4."
-#### GitHub Link -https://github.com/SenDev2001/ProjectEbonkeep
-#### Game Link - 
 
 
 ### Video Demonstration -
@@ -410,30 +410,35 @@ Through this project, I learned a lot about Behavior Trees, AI Perception, and B
 
 ## Bibliography  
 
+- Witcher 3 - The Detailed Life of NPCs (2015) At: https://www.youtube.com/watch?v=9vzzPB6PRsE (Accessed 16/02/2025).
+
+-  Postmortem: AI action planning on Assassin’s Creed Odyssey and Immortals Fenyx Rising (s.d.) At: https://www.gamedeveloper.com/programming/postmortem-ai-action-planning-on-assassins-creed-odyssey-and-immortals-fenyx-rising- (Accessed  16/02/2025).
+
 - Behavior Trees in Unreal Engine | Unreal Engine 5.5 Documentation | Epic Developer Community (s.d.) At: https://dev.epicgames.com/documentation/en-us/unreal-engine/behavior-trees-in-unreal-engine (Accessed  13/05/2025).
 
-- Postmortem: AI action planning on Assassin’s Creed Odyssey and Immortals Fenyx Rising (s.d.) At: https://www.gamedeveloper.com/programming/postmortem-ai-action-planning-on-assassins-creed-odyssey-and-immortals-fenyx-rising- (Accessed  17/05/2025).
+- Smart Enemy AI | (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=-t3PbGRazKg (Accessed  16/02/2025).
 
-- Smart Enemy AI | (Part 1: Behavior Trees) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=-t3PbGRazKg (Accessed  14/05/2025).
+- Smart Enemy AI | (Part 2: Patrolling & States) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=WFV5IewGks8 (Accessed  17/02/2025).
 
-- Smart Enemy AI | (Part 2: Patrolling & States) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=WFV5IewGks8 (Accessed  14/05/2025).
-
-- Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=gsyZdKYAT_4 (Accessed  14/05/2025).
+- Smart Enemy AI |  (Part 3: Perception) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=gsyZdKYAT_4 (Accessed  20/01/2025).
 
 - Smart Enemy AI |  (Part 4:  EQS) | Tutorial in Unreal Engine 5 (UE5) (2023) At: https://www.youtube.com/watch?v=Oy_LojjRiWo (Accessed  14/05/2025).
 
-- Witcher 3 - The Detailed Life of NPCs (2015) At: https://www.youtube.com/watch?v=9vzzPB6PRsE (Accessed  17/05/2025).
+- How to Make a Simple Behavior Tree in Unreal Engine 5 - Advanced AI (2022) At: https://www.youtube.com/watch?v=QJuaB2V79mU (Accessed  15/02/2025).
 
+- Unreal Engine 5 RPG Tutorial Series - #21: AI Detection and Chasing (2023) At: https://www.youtube.com/watch?v=ljmOsZVrtok (Accessed  22/02/2025).
+
+- How to Make the NPC’s Head Look At the Player in Unreal Engine 5 (2023) At: https://www.youtube.com/watch?v=8skq8t_Fffk (Accessed  04/03/2025).
+
+- AI Random Roam | Basic Roaming - Unreal Engine 5 Tutorial (2022) At: https://www.youtube.com/watch?v=Mi7r0LqUmOE (Accessed  04/03/2025).
 
 
 ## Declared Assets
 - Mixamo -
-
 Sword Guard - https://www.mixamo.com/#/?page=1&type=Character (PALADIN L NORDSTORM)
 
 Bow Guard - https://sketchfab.com/3d-models/medieval-guard-ca548172f0984660bc4213b9404284fa
 
 - Sketchfab -
-
  NPC Villager- 
  https://sketchfab.com/3d-models/medieval-civilian-3-d99ca22f06134e8dab28fdfa75d87f31 (CIVILIAN 3)
