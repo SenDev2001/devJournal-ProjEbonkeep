@@ -300,10 +300,17 @@ If the Itch link doesn't work, use this instead.
 
 
 
-### GitHub Link
+### GitHub Link (Game Source code)
 <a href="https://github.com/SenDev2001/ProjectEbonkeep" target="_blank" rel="noopener noreferrer" style="padding:10px 20px; background:#24292e; color:#fff; text-decoration:none; border-radius:5px;">
-  View ProjectEbonkeep on GitHub
+  View Project Ebonkeep on GitHub
 </a>
+
+### GitHub Link (Development journal)
+<a href="https://github.com/SenDev2001/devJournal-ProjEbonkeep/blob/main/DevJournal/devJ.md" target="_blank" rel="noopener noreferrer" style="padding:10px 20px; background:#24292e; color:#fff; text-decoration:none; border-radius:5px;">
+  View devJournal on GitHub
+</a>
+
+
 
 
 
