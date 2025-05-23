@@ -293,11 +293,19 @@ Team Member Dropouts: Due to these technical issues, some team members dropped o
 
 #### Google Drive 
 If the Itch link doesn't work, use this instead.
-<a href="https://drive.google.com/drive/folders/1nCy6UqPFHVDat2GnZnSfAemhTn_VIbSM" target="_blank">View Files on Google Drive</a>
+
+<a href="https://drive.google.com/drive/folders/1nCy6UqPFHVDat2GnZnSfAemhTn_VIbSM" target="_blank" rel="noopener noreferrer" style="padding:10px 20px; background:#4285F4; color:#fff; text-decoration:none; border-radius:5px;">
+  View Files on Google Drive
+</a>
+
 
 
 ### GitHub Link
-https://github.com/SenDev2001/ProjectEbonkeep
+<a href="https://github.com/SenDev2001/ProjectEbonkeep" target="_blank" rel="noopener noreferrer" style="padding:10px 20px; background:#24292e; color:#fff; text-decoration:none; border-radius:5px;">
+  View ProjectEbonkeep on GitHub
+</a>
+
+
 
 ### Source Code/Project Files
   - #### Behavior Tree Development and Preview
