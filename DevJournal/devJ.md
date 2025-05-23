@@ -283,6 +283,17 @@ Team Member Dropouts: Due to these technical issues, some team members dropped o
 ## Outcomes
 
 ### Build Link
+#### Download on Itch.io (Click the image)
+<a href="https://ebonkeep-team.itch.io/ebonkeep" target="_blank">
+  <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-22%20234837.png" 
+       alt="Ebonkeep Screenshot" 
+       style="width:50%; max-width:400px; border-radius:10px; cursor:pointer;">
+</a>
+
+
+#### Google Drive 
+If the Itch link doesn't work, use this instead.
+<a href="https://drive.google.com/drive/folders/1nCy6UqPFHVDat2GnZnSfAemhTn_VIbSM" target="_blank">View Files on Google Drive</a>
 
 
 ### GitHub Link
