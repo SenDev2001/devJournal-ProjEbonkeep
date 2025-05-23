@@ -129,9 +129,7 @@ Accordingly, we initially planned what types of places and people would be in an
 We created all of these locations as a detailed project in Unreal Engine. Throughout the design process, we meticulously planned the gameplay-related factors, the environment, the AI, and the environment. In this way, the Castle environment we created became a lively, magnificent, and stylish environment.
 
 The photos below help show our journey from the beginning of the creation of this Castle to today.. 
-
  
-
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Refer%20image.png" alt="" width="800" height="350">
 
 Figure 01 - This castle picture is we refer to create our Castle.
@@ -140,7 +138,7 @@ Figure 01 - This castle picture is we refer to create our Castle.
  
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20First%20Step.png" alt="Castle First Step" width="800" height="350">
 
-Figure 02 - This is how we first made our castle gray box
+Figure 02 - This shows the initial gray model of our castle during its early development.
 
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20Parts.jpg" alt="Castle Parts" width="800" height="350">
@@ -149,39 +147,47 @@ Figure 3 - This is a picture of our game's first scene, showing the player chara
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20walls.png" alt="Castle Walls" width="800" height="350">
 
-Figure 4 - These are designing of our game Walls. 
+Figure 4 - This picture shows the design phase of our game, Walls.
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/CastleGRey.png" alt="Castle Grey" width="800" height="350">
 
-Figure 5 - 
+Figure 5 - This picture shows the complete gray model of our castle.
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/castle%20inside.png" alt="Castle Inside" width="800" height="350">
 
-Figure 6
+Figure 6 - This picture shows the process of creating the inside of our castle."
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/castle%20gates.png" alt="Castle Gates" width="800" height="350">
 
-figure 7
+figure 7- This picture shows our castle after we added textures and materials.
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20Errors.png" alt="Castle Errors" width="800" height="350">
 
-figure 8
+figure 8- This picture shows a texture modeling error.
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Castle%20With%20rain.png" alt="Castle With Rain" width="800" height="350">
 
-Figure 9
+Figure 9- This picture shows the castle after we finished building it, added the guards and NPCs, and began planning where everything else will go.
 
-<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230629.png" alt="Updated Scene" width="800" height="350">
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-22%20230540.png" alt="Updated Scene" width="800" height="350">
 
+Figure 10 - This is a picture of our completed final castle. This is how we finished our castle.
 
- This is how we Start Our Castle 
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-22%20230615.png" alt="Updated Scene" width="800" height="350">
+
+Figure 11 - This is a picture of our completed final castle front view.
 
  - #### Character Creation and Design
  #### Boss Enemy Design
 Creating the final boss, the massive Gold Golem:
 
+<img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Boss%20enemy%20sketch.jpg" alt="Boss Enemy Sketch" height="450"> 
+
+Figure 12 -This picture shows a sketch of the boss enemy
+
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-22%20192938.png" alt="New Scene" height="450">
 
+Figure 13- This is our game's final boss enemy.
 
 Conceptual Phase - Our artists created concept drawings of a large, fearsome Gold Golem, with lion faces on both shoulders.
 AI Behavior Design - A complex behavior tree for the boss was created by our other programmer, including the following special abilities:
@@ -193,10 +199,13 @@ Coordination - I helped my colleague build the boss AI, especially with bug fixe
 
 #### Guard AI Design
 I designed my main role, the Guard AI, as follows:
+I used characters from Mixamo and Sketchfab as assets in the design process.
 
 Bow Guard Design
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230735.png" alt="Castle Scene" height="450">
+
+Figure 14 - This picture shows our game's bow guard.
 
 - Designed as a typical medieval archer
 - Attacks from a distance using a crossbow
@@ -207,6 +216,8 @@ Sword Guard Design
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230720.png" alt="Updated Scene" height="350">
 
+Figure 15 - This picture shows our game's Sword guard.
+
 - Designed as a medieval knight character with a war shield and sword
 - Attacks in close combat using a protective shield and a strong sword
 - Deployed inside castle areas, they follow a patrol route every time they patrol
@@ -214,6 +225,8 @@ Sword Guard Design
 
 #### NPC Villagers
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20230706.png" alt="Updated Scene" height="450">
+
+Figure 16 - This picture shoes our game's NPC Villager. 
 
 - Deployed inside castle, AI random roaming.
 
@@ -243,7 +256,7 @@ Created a Character Blueprint
 Change locations periodically during Event Tick
 Respond to AI Perception
 
-Villager Behavior:
+Villager Behaviour:
 
 Daily Activities: Villagers move between shops, gardens, and other areas during the day
 When seeing the player: Stop, turn towards the player, wave, or talk
@@ -257,13 +270,13 @@ Able to obtain information or missions from some villagers
 ### Technical Difficulties
 
 - Wrong Unreal Version:
-We made this game in Unreal Engine 5.4 because that's the version available on the university computers. However, one of our team members used Unreal Engine 5.5.4 and pushed their changes. Now we're in the final days before submission and don't have time to fix it.
 
-  "When you open the project, it opens in 5.5.4."
+We made this game in Unreal Engine 5.4 because that's the version available on the university computers. However, one of our team members used Unreal Engine 5.5.4 and pushed their changes. Now we're in the final days before submission and don't have time to fix it.
+"When you open the project, it opens in 5.5.4."
 
 - Git LFS:
 
- There were issues using Git LFS (Large File Storage) to handle large files. We had to pay to fix this.
+There were issues using Git LFS (Large File Storage) to handle large files. We had to pay to fix this.
 Wrong Version Conflicts: When some members pushed changes with the wrong Unreal Engine version, the project completely crashed. We had to revert to the previous version to fix this.
 Team Member Dropouts: Due to these technical issues, some team members dropped out of the project, thinking we couldn't finish it. This affected the morale of the rest of the team.
 
@@ -274,10 +287,13 @@ Team Member Dropouts: Due to these technical issues, some team members dropped o
 
 ### GitHub Link
 https://github.com/SenDev2001/ProjectEbonkeep
+
 ### Source Code/Project Files
   - #### Behavior Tree Development and Preview
 
 <img src="https://raw.githubusercontent.com/SenDev2001/dJPICTURE-ProjEbonkeep/main/Screenshot%202025-05-21%20191048.png" alt="Castle Scene Update" width="750" height="350">
+
+Figure 17 - This diagram illustrates the behaviour tree of my sword and bow guards.
 
 
  -  Main Behavior Tree Structure:
@@ -319,7 +335,7 @@ This behavior tree controls the behavior of Sword guards. Basically, the guard p
 I use the same setup for the bow guards, but I have removed the "Move To player" action and "BIsBlocking". Since the archers are on the gates, they do not need to move to the player they can not block with crossbow. All other actions work the same way, and when they see the player or hear a noise, they shoot at the player.
 
   - #### Guards AI controller 
-   - Evenet Graph
+   - Event Graph
 https://blueprintue.com/blueprint/y72jyfud/ 
 
 <iframe src="https://blueprintue.com/render/y72jyfud/" style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
@@ -344,18 +360,31 @@ Next, a "Set Value as Enum" node assigns the value **Attacking** from the "E_AIS
 This process updates the necessary Blackboard Variables to trigger **a powerful and aggressive attacking behavior** in the Guard AI. This strengthens the functionality of the AI ​​Behavior Tree and helps the AI ​​behave in a way that is authentic and realistic.
 
 
- - Set state as Investigate 
- <iframe src="https://blueprintue.com/render/qe5khhb8/" style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
+- Set state as Investigate 
+<iframe src="https://blueprintue.com/render/qe5khhb8/" style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
- This Blueprint process helps an Unreal Engine Guard AI enter an "Investigating" state. This is used to allow an AI to enter a suspicious location. First, the Set Value as Enum node assigns the "Investigating" value of the E_AIState enum to the Blackboard key State Key Name. This updates the AI's current state to "Investigating".
+This Blueprint process helps an Unreal Engine Guard AI enter an "Investigating" state. This is used to allow an AI to enter a suspicious location. First, the Set Value as Enum node assigns the "Investigating" value of the E_AIState enum to the Blackboard key State Key Name. This updates the AI's current state to "Investigating".
 Next, the Set Value as Vector node assigns the location from the "Location" pin to the Blackboard's Point of Interest Key Name Vector Key. This helps the AI ​​identify the location to search.
 Accordingly, this Blueprint process updates the Blackboard Variables necessary to allow the AI ​​to enter a suspicious location and set the AI ​​state to "Investigating" at that time. This helps make the AI ​​Guard more realistic and immersive.
 
- - set movement speed
- <iframe src="https://blueprintue.com/render/k8uh0mvp/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
+- Sword guard attack
+<iframe src="https://blueprintue.com/render/pw8_s2p7/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
- - sword guard attack
-<iframe src="https://blueprintue.com/render/r5ar0qlb/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
+When a Guard makes an attack, it checks to see if there is a player character nearby using a sphere trace. If a player is found, damage is applied to it. The attack is called from the Behavior Tree.
+
+
+- Sword guard attack and block
+<iframe src="https://blueprintue.com/render/522qaqte/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
+
+If the player shoots an arrow at the guard while it is blocking, the guard's health will not decrease. However, after a short delay, blocking is disabled. When the player shoots again, the guard will not block, so its health will decrease.
+
+- Bow Guard attack
+<iframe src="https://blueprintue.com/render/y_-77ewl/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
+
+This Bow Guard attack process is executed through the BTT_AttackBow task node, which is connected to the behavior tree. Before the Bow Guard attacks the Player, the Find Look at Rotation node turns the Guard's face to the player's location. Accordingly, the arrow will correctly go in the direction of the player.
+In the FireArrow process, the player is identified by a Line Trace and an arrow is spawned. The Bow Guard is specified as the Owner of that arrow. If the hit actor is a player character, a sound is played .
+This process is executed by the bowGuard's AI controller and the Blackboard system, and is configured as a long-range attack system. After the AI ​​sees the player, the BTT_AttackBow node is executed and the arrow is used to attack the player.
+This makes the Bow Guard an AI system that can intelligently attack a player from a distance.
 
 - damage and death
 <iframe src="https://blueprintue.com/render/g4a0etc3/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
@@ -369,27 +398,28 @@ Accordingly, this Blueprint process updates the Blackboard Variables necessary t
 - get spline point as world position
 <iframe src="https://blueprintue.com/render/ps7tlgw8/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
-- Sword guard attack and block
-<iframe src="https://blueprintue.com/render/522qaqte/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
-
-- Sword guard attack
-<iframe src="https://blueprintue.com/render/pw8_s2p7/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
-
 - BP Villager
 <iframe src="https://blueprintue.com/render/80zg2b8y/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe> 
 
-- Bow Guard attack
-<iframe src="https://blueprintue.com/render/y_-77ewl/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
+- set movement speed 
+ <iframe src="https://blueprintue.com/render/k8uh0mvp/"style="width: 100%; height:560" scrolling="no" allowfullscreen></iframe>
 
 ### Video Demonstration -
+
 
 -  Sword Guards and NPCs
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/B3lbsZjUn3I?si=ae7gDx1FnKxX4aHt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+
 - Bow guards
 
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/CvXdapR6qXc?si=4roxnlW5ZZGTfjt_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+- Game Play 
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/nxOjKMeuWVo?si=bKLT7Dd8eeF8Lll1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 ## Reflection 
 
@@ -422,8 +452,6 @@ Although this wasn't my main work, I started creating NPC villagers to make our 
 
 ### Negative Analysis  
 This project also had some shortcomings and challenges:
-
-  "When you open the project, it opens in 5.5.4."
 
 - Time Limit:
 
